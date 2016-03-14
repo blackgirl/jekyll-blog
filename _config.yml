@@ -1,13 +1,8 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-
 # Setup
 title:               Black Hole
 tagline:             'Black hole of sense'
 description:         'The gravity on content with a hidden sense.'
-url:                 http://lanyon.getpoole.com
+url:                 ''
 baseurl:             ''
 paginate:            5
 
