@@ -456,13 +456,16 @@ quote {
     font-size: 1.5em;
     background-color: #AD4;
 
-    font-family: "FlamaBold",Helvetica,Arial,sans-serif;
+    font-family: "FlamaBold","Helvetica Neue",Arial,sans-serif;
     /*color: #ef4030;*/
     color: #222;
     font-weight: 100;
 }
 .quote {
-    margin: 50px 0;
+    margin: 50px;
+    margin-left: 0;
+    font-weight: 100;
+    font-family: "FlamaBold","Helvetica Neue",Arial,sans-serif;
 }
 /* Small title of paragraph */
 .p-title {
