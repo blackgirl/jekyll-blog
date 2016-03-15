@@ -1,10 +1,12 @@
+#Gems
+# gems: [jekyll-paginate]
 # Setup
 title:               Black Hole
 tagline:             'Black hole of sense'
 description:         'The gravity on content with a hidden sense.'
 url:                 ''
 baseurl:             ''
-paginate:            5
+# paginate:            5
 
 # About/contact
 author:

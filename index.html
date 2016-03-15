@@ -3,9 +3,10 @@ layout: default
 <!-- title: Black Hole -->
 ---
 <h1></h1>
-<p class="quote"><quote>«Кровь есть совсем особый сок»</quote>
-— Гете «Фауст».</p>
-<p class="quote"><quote>«Тогда я еще не знал, что все происходит
+<p class="quote section lightgrey"><quote>«Кровь есть совсем особый сок»</quote></p>
+<!-- — Гете «Фауст».</p> -->
+<p class="handmark blue">Гете «Фауст»</p>
+<p class="quote highlited yellow"><quote>«Тогда я еще не знал, что все происходит
 в крови человека, а уж потом просачивается 
 наружу и свертывается в действительность»</quote>— Густав Майринк «Ангел Западного окна».</p>
 
@@ -20,11 +21,11 @@ layout: default
       </a>
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
-    {{ post.content }}
+    <!-- {{ post.content }} -->
   </div>
   {% endfor %}
 </div>
-<div class="pagination">
+<!-- <div class="pagination">
   {% if paginator.posts %}
     {% if paginator.next_page %}
       <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
@@ -41,4 +42,4 @@ layout: default
       <span class="pagination-item newer">Newer</span>
     {% endif %}
   {% endif %}
-</div>
+</div> -->

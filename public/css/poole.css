@@ -449,12 +449,17 @@ a.pagination-item:hover {
 }
 /* Quote */
 quote {
-    font-size: 40px;
-    line-height: 40px;
+    /*font-size: 40px;*/
+    /*line-height: 40px;*/
+
+    line-height: 1;
+    font-size: 1.5em;
+    background-color: #AD4;
+
     font-family: "FlamaBold",Helvetica,Arial,sans-serif;
-    color: #ef4030;
+    /*color: #ef4030;*/
+    color: #222;
     font-weight: 100;
-    /*padding: 30px 0;*/
 }
 .quote {
     margin: 50px 0;
@@ -467,4 +472,26 @@ quote {
     letter-spacing: -.025rem;
     font-size: 1.1rem;
     margin: 1rem auto;
+}
+.handmark.blue {
+  /*padding-left: 36px;
+  float: left;
+  background-image: url("http://uploads.webflow.com/5317d67d660658b254000454/534e3bfe3392f3d069000167_arrow-blue-leftz.png");
+  background-position: 0px 38%;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  font-size: 28px;
+  letter-spacing: 0.7px;
+  font-family: kremlin-pro-web, sans-serif;
+  color: #4c9efc;*/
+}
+.highlited.yellow {
+  /*font-family: Menlo, monaco, monospace;
+  font-size: 1em;
+  background: #ff0;
+  color: #000;
+  line-height: 2;*/
+}
+.section.lightgrey {
+    background-color: #f2f2f2;
 }
