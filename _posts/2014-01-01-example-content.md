@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content
-category: some_category_name
+categories: some_category_name
 ---
 
 
