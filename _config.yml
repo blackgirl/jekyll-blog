@@ -6,7 +6,7 @@ title:               '«abreg ad habra»'
 url:                 ''
 baseurl:             ''
 # paginate:            5
-category_dir: /
+category_dir: /index.html
 
 # About/contact
 author:
