@@ -1,11 +1,12 @@
 #Gems
 # gems: [jekyll-paginate]
 # Setup
-title:               Black Hole
-description:         'The gravity on content with a hidden sense.'
+description:         'Абланатханалба'
+title:               '«abreg ad habra»'
 url:                 ''
 baseurl:             ''
 # paginate:            5
+category_dir: /
 
 # About/contact
 author:
