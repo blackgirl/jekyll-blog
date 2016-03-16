@@ -288,10 +288,16 @@ tbody tr:nth-child(odd) th {
  */
 
 .message {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    padding: 0;
+    line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    display: inline-block;
+    color: #333;
+    letter-spacing: .025rem;
+    background-color: rgba(249, 253, 2, 0.38);
 }
 
 
