@@ -4,7 +4,7 @@
 description:         'Абланатханалба'
 title:               '«abreg ad habra»'
 url:                 ''
-baseurl:             ''
+baseurl:             '/blog'
 # paginate:            5
 plugins:             /_plugins
 # About/contact
