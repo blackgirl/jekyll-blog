@@ -6,7 +6,7 @@ title:               '«abreg ad habra»'
 url:                 ''
 baseurl:             ''
 # paginate:            5
-
+plugins:             /_plugins
 # About/contact
 author:
   name:              Alyonka Chornaya
