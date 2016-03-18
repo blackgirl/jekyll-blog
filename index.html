@@ -24,6 +24,11 @@ layout: default
 <p>Древняя космология выстраивалась не на внешних исследованиях, а на внутреннем знании, что находилось в крови людей. Не нужны были анатомические театры, чтоб узнать строение внутренностей, они были известны и без этого.</p>
 <p>Человеческое осознание сегодня ограничивается поверхностью вещей, в том числе и собственного тела. Возник совершенно иной модус существования.</p>
 <p>Когда утрачена была родовая связь кровь лишилась своей прежней энергетической силы, а человечество — ясновидения, получив взамен интеллект. И человек либо поднимется на следующую ступень эволюционной лестницы, или окончательно деградирует.</p>
+<div>
+  {% for category in site.categories %}
+     <span class="post-category"><a href="">{{ category }}</a></span>
+  {% endfor %}
+</div>
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
@@ -32,9 +37,9 @@ layout: default
         {{ post.title }}
       </a>
     </h1>
-  <span>{% categorylink example %}This is a link to example{% endcategorylink %}</span>
     <span class="post-date">{{ post.date | date_to_string }}</span>
-    <span class="post-date"><a href="">{{ post.category }}</a></span>
+    <!-- <span class="post-date"><a href="">{{ post.category }}</a></span> -->
+  <span class="post-date">{% categorylink example %}This is a link to example{% endcategorylink %}</span>
      <!-- {{ post.content }} -->
   </div>
   {% endfor %}
