@@ -4,9 +4,9 @@
 description:         'Абланатханалба'
 title:               '«abreg ad habra»'
 url:                 ''
-baseurl:             '/blog'
+baseurl:             ''
 # paginate:            5
-plugins:             /_plugins
+# plugins_dir:             /_plugins
 # About/contact
 author:
   name:              Alyonka Chornaya
