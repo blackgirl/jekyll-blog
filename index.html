@@ -8,7 +8,9 @@ layout: default
      <span class="post-category"><a href="">{{ post }}</a></span>
   {% endfor %}
 </div> -->
-<div class="posts">
+
+<!-- moved to the blog page -->
+<!-- <div class="posts">
   {% for post in site.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -18,10 +20,12 @@ layout: default
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <span class="post-date"><a href="">{{ post.category }}</a></span>
-     <!-- {{ post.content }} -->
+     {{ post.content }}
   </div>
   {% endfor %}
-</div>
+</div> -->
+<!-- moved to the blog page -->
+
 <!-- <div class="pagination">
   {% if paginator.posts %}
     {% if paginator.next_page %}
