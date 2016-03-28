@@ -7,14 +7,14 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   <span class="category">in category <b>{{ page.categories }}</b></span><br/>
 
-  <div class="tags">
+<!--   <div class="tags">
     {% for tag in page.tags %}
-      <!-- <li> -->
+     <li>
         <span class="tag"> {% capture entry %}{{ tag }}{% endcapture %}{{ tag }}</span>
-        <!-- {{tag}} -->
-      <!-- </li> -->
+       {{tag}}
+     </li>
     {% endfor %}
-  </div>
+  </div> -->
 
   {{ content }}
 </div>
