@@ -315,7 +315,8 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 }
 .container.content {
-  margin-top: 150px;
+  /*margin-top: 150px;*/
+  padding-top: 150px;
 }
 
 
@@ -458,14 +459,16 @@ quote {
     /*font-size: 40px;*/
     /*line-height: 40px;*/
 
-    line-height: 1;
+    line-height: 1.1;
     font-size: 1.5em;
+    font-size: 2em;
     background-color: #AD4;
 
-    font-family: "FlamaBold","Helvetica Neue",Arial,sans-serif;
-    /*color: #ef4030;*/
-    color: #222;
-    font-weight: 100;
+    font-family: "Open Sans","FlamaBold","Helvetica Neue",Arial,sans-serif;
+    font-style: italic;
+    color: #272727;
+    font-weight: 300;
+    /*text-decoration: underline;*/
 }
 .quote {
     margin: 50px;

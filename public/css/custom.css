@@ -1,0 +1,36 @@
+.hide {
+	display: none;
+}
+
+.border-top {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: .5em;
+    background: #222;
+}
+    .orange {
+        background: #f43c12;
+    }
+    .salat {
+    	background: #ad0;
+    }
+    .blue {
+    	background: blue;
+    }
+    .red {
+    	background: tomato;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+/* POST */
+.tag {
+    color: #268bd2;
+    padding: 5px;
+    font-style: italic;
+}

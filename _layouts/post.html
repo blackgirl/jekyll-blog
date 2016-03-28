@@ -3,11 +3,36 @@ layout: default
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post-title">{{ page.title | upcase }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  <a href="#"><span class="category">{{ page.category }}</span></a><br/>
+  <span class="category">in category <b>{{ page.categories }}</b></span><br/>
+
+  <div class="tags">
+    {% for tag in page.tags %}
+      <!-- <li> -->
+        <span class="tag"> {% capture entry %}{{ tag }}{% endcapture %}{{ tag }}</span>
+        <!-- {{tag}} -->
+      <!-- </li> -->
+    {% endfor %}
+  </div>
+
   {{ content }}
 </div>
+
+ <ul class="div">
+    {% for tag in page.tags %}
+      <li>
+        <details>
+          <summary><span><i class="fa fa-tag"></i> {%capture entry%}{{tag}}{%endcapture%}{{tag}}</span></summary>
+        <ul>
+        {% for post in site.tags[entry] %}
+          <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {%endfor%}
+        </ul>
+        </details>
+      </li>
+    {% endfor %}
+  </ul>
 
 <div class="related">
   <h2>Related Posts</h2>

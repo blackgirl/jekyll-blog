@@ -1,0 +1,30 @@
+
+{% for tag in site.tags %}
+    <a	class="btn btn-xs btn-primary"
+			style="font-size: {{ tag | last | size | times: 50 | divided_by: site.categories.size | plus: 70 }}%"
+			href="/{{ tag | first | slugize }}/"
+		>{{ tag | first }} <span class="badge">{{ tag | last | size }}</span></a>
+{% endfor %}
+
+  <ul class="tags tags-posts">
+    {% for tag in page.tags %}
+      <li>
+        <details>
+          <summary>
+            <span>
+              <i class="fa fa-tag"></i> 
+              {%capture entry%}
+              {{tag}}
+              {%endcapture%}
+              {{tag}}
+            </span>
+          </summary>
+        <ul>
+        {% for post in site.tags[entry] %}
+          <li><a href="{{post.url}}">{{post.title}}</a></li>
+        {%endfor%}
+        </ul>
+        </details>
+      </li>
+    {% endfor %}
+  </ul>

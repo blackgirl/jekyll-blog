@@ -51,9 +51,9 @@ module Jekyll
     def render(context)
       # If the category is a variable in the current context, expand it
       if context.has_key?(@category)
-	      category = context[@category]
+        category = context[@category]
       else
-	      category = @category
+        category = @category
       end
 
 
@@ -148,3 +148,4 @@ Liquid::Template.register_tag('categorylink', Jekyll::CategoryArchiveLinkTag)
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+Status API Training Shop Blog About

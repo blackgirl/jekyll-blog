@@ -2,6 +2,9 @@
 layout: post
 title: Example content
 categories: example
+tags:
+- Новости
+- Веб
 ---
 
 
