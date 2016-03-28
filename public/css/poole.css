@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #272727;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -455,13 +455,12 @@ a.pagination-item:hover {
   }
 }
 /* Quote */
-quote {
+quote, blockquote {
     /*font-size: 40px;*/
     /*line-height: 40px;*/
 
     line-height: 1.1;
-    font-size: 1.5em;
-    font-size: 2em;
+    font-size: 1.2em;
     background-color: #AD4;
 
     font-family: "Open Sans","FlamaBold","Helvetica Neue",Arial,sans-serif;
@@ -470,11 +469,11 @@ quote {
     font-weight: 300;
     /*text-decoration: underline;*/
 }
-.quote {
-    margin: 50px;
+.quote, blockquote {
+    margin: 20px;
     margin-left: 0;
-    font-weight: 400;
-    line-height: 1;
+    font-weight: 300;
+    line-height: 1.2;
     font-family: "FlamaBold","Helvetica Neue",Arial,sans-serif;
 }
 /* Small title of paragraph */
