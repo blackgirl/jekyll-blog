@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archive
+title: Кладовая
 ---
 
 {% for post in site.posts %}
