@@ -9,3 +9,5 @@ title: Посыл
 [Книга "Открой глаза фотоаппаратом"](http://magicspeedreading.com/prg/photo.zip)
 
 ------------------------------
+[Веб-типографика](http://html5book.ru/web-topography/)
+------------------------------

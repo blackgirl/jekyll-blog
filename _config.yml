@@ -1,18 +1,21 @@
 # Setup
-description:         'Абланатханалба'
+description:         'Абланатханалба.'
 title:               '«abreg ad habra»'
 url:                 ''
 baseurl:             ''
+intro:         'Еще рано — еще так многое по плечу, не взяла кредитов, не родила детей. Не наелась дерьма по самое не хочу, не устала любить людей.'
 # paginate:            5
 #paginate_path: "/slovar/words/page:num"
 markdown: kramdown
 highlighter: rouge
+# Permalinks
 permalink: /:title/
+# permalink:        pretty
 paginate: 5
 paginate_path: "/blog/:num/"
 
 gems:
-- jekyll-paginat
+- jekyll-paginate
 # About/contact
 author:
   name:              Alyonka Chornaya
@@ -38,3 +41,5 @@ pages:
   Cловарь: '/slovar'
   Бложек: '/blog'
   Feed: '/atom.xml'
+
+# Custom vars

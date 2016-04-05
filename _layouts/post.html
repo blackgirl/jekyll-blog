@@ -2,7 +2,6 @@
 layout: default
 ---
 <div class="border-top yellow"></div>
-
 <div class="post">
   <h1 class="post-title">{{ page.title | upcase }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
@@ -10,17 +9,16 @@ layout: default
 
 <!--   <div class="tags">
     {% for tag in page.tags %}
-     <li>
-        <span class="tag"> {% capture entry %}{{ tag }}{% endcapture %}{{ tag }}</span>
-       {{tag}}
-     </li>
+     <li><span class="tag"> {% capture entry %}{{ tag }}{% endcapture %}{{ tag }}</span>
+       {{tag}}</li>
     {% endfor %}
   </div> -->
 
   {{ content }}
 </div>
 
- <ul class="div">
+<div class="related">
+ <ul class="div related">
     {% for tag in page.tags %}
       <li>
         <details>
@@ -34,8 +32,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-<div class="related">
+<!-- 
   <h2>Related Posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
@@ -48,5 +45,5 @@ layout: default
         </h3>
       </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 </div>

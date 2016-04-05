@@ -382,7 +382,7 @@ tbody tr:nth-child(odd) th {
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  /*border-top: 1px solid #eee;*/
 }
 .related-posts {
   padding-left: 0;
@@ -455,19 +455,14 @@ a.pagination-item:hover {
   }
 }
 /* Quote */
-quote, blockquote {
-    /*font-size: 40px;*/
-    /*line-height: 40px;*/
-
+/*quote, blockquote {
     line-height: 1.1;
     font-size: 1.2em;
     background-color: #AD4;
-
     font-family: "Open Sans","FlamaBold","Helvetica Neue",Arial,sans-serif;
     font-style: italic;
     color: #272727;
     font-weight: 300;
-    /*text-decoration: underline;*/
 }
 .quote, blockquote {
     margin: 20px;
@@ -475,7 +470,7 @@ quote, blockquote {
     font-weight: 300;
     line-height: 1.2;
     font-family: "FlamaBold","Helvetica Neue",Arial,sans-serif;
-}
+}*/
 /* Small title of paragraph */
 .p-title {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
