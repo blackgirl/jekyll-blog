@@ -1,9 +1,9 @@
 # Setup
-description:         'Абланатханалба.'
+# description:         'Абланатханалба.'
+description:         'ABRACADABRA'
 title:               '«abreg ad habra»'
 url:                 ''
 baseurl:             ''
-intro:         'Еще рано — еще так многое по плечу, не взяла кредитов, не родила детей. Не наелась дерьма по самое не хочу, не устала любить людей.'
 # paginate:            5
 #paginate_path: "/slovar/words/page:num"
 markdown: kramdown

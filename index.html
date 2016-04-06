@@ -4,20 +4,15 @@ ephitaphy: Память — писарь нашей души &nbsp;&rarr;
 <!-- title: Black Hole -->
 ---
 <div class="border-top orange"></div>
-<p class="page-intro">{{ site.intro }}</p>
-<!-- <p class="page-intro">Еще рано — еще так многое по плечу, не взяла кредитов, не родила детей. Не наелась дерьма по самое не хочу, не устала любить людей.</p> -->
-<!-- <p>Ты становишься на углу оживленной улицы и представляешь, что тебя здесь нет. Вернее, тебя нет вообще. Пешеходы идут, сигналят машины, открываются двери магазинов, сменяются пассажиры на остановке. То есть в принципе мир продолжает жить и без тебя. Понимать это больно. Но важно.</p> -->
-
-<!-- {% include rubrikator.html %} -->
-
-<!-- <div>
+<p class="page-intro one-three col">Ещё рано — ещё так многое по плечу, не&nbsp;взяла кредитов, не&nbsp;родила детей. Не&nbsp;наелась дерьма по самое не хочу, не&nbsp;устала любить людей.</p>
+<!-- <p class="page-intro">Еще рано — еще так многое по плечу, не взяла кредитов, не родила детей. Не наелась дерьма по самое не хочу, не устала любить людей. Ты становишься на углу оживленной улицы и представляешь, что тебя здесь нет. Вернее, тебя нет вообще. Пешеходы идут, сигналят машины, открываются двери магазинов, сменяются пассажиры на остановке. То есть в принципе мир продолжает жить и без тебя. Понимать это больно. Но важно.</p>
+{% include rubrikator.html %}
+<div>
   {% for post in site.categories.[page.category] %}
      <span class="post-category"><a href="">{{ post }}</a></span>
   {% endfor %}
-</div> -->
-
-<!-- moved to the blog page -->
-<!-- <div class="posts">
+</div>
+<div class="posts">
   {% for post in site.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -30,10 +25,8 @@ ephitaphy: Память — писарь нашей души &nbsp;&rarr;
      {{ post.content }}
   </div>
   {% endfor %}
-</div> -->
-<!-- moved to the blog page -->
-
-<!-- <div class="pagination">
+</div>
+<div class="pagination">
   {% if paginator.posts %}
     {% if paginator.next_page %}
       <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>

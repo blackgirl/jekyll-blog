@@ -1,0 +1,80 @@
+/* Burger menu icon (it's lines) */
+.navbar-toggle.collapsed .icon-bar {
+  display:block;
+  width: 30px;
+  height: 1px;
+  border-radius: 1px;
+  margin-top: 2px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 7px;
+}
+.navbar-toggle:not(.collapsed) .icon-bar {
+  display: none;
+}
+.navbar-toggle:not(.collapsed) .icon-bar-opened {
+  display: block;
+}
+.navbar-toggle.collapsed .icon-bar-opened {
+  display:none;
+}
+
+/* Close 'X' icon */
+.close {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 40px;
+  overflow: hidden;
+}
+.close:hover::before, .close:hover::after {
+  background: #272727;
+}
+.close::before, .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 1px;
+  /*margin-top: -1px;*/
+  background: #197eb2;
+}
+.close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* Large icon*/
+/*.close.big {
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  -ms-transform: scale(3);
+  -o-transform: scale(3);
+  transform: scale(3);
+}*/
+/* line width type */
+.close.hairline::before, .close.hairline::after {
+  height: 1px;
+}
+.close.thick::before, .close.thick::after {
+  height: 4px;
+  margin-top: -2px;
+}
+.close.black::before, .close.black::after {
+  height: 8px;
+  margin-top: -4px;
+}
+.close.heavy::before, .close.heavy::after {
+  height: 12px;
+  margin-top: -6px;
+}
