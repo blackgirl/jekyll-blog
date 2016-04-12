@@ -1,45 +1,18 @@
 ---
 layout: default
-ephitaphy: Память — писарь нашей души &nbsp;&rarr;
+<!-- ephitaphy: Память — писарь нашей души &nbsp;&rarr; -->
 <!-- title: Black Hole -->
 ---
 <p class="page-intro one-three col">Ещё рано — ещё так многое по плечу, не&nbsp;взяла кредитов, не&nbsp;родила детей. Не&nbsp;наелась дерьма по самое не хочу, не&nbsp;устала любить людей.</p>
-<!-- <p class="page-intro">Еще рано — еще так многое по плечу, не взяла кредитов, не родила детей. Не наелась дерьма по самое не хочу, не устала любить людей. Ты становишься на углу оживленной улицы и представляешь, что тебя здесь нет. Вернее, тебя нет вообще. Пешеходы идут, сигналят машины, открываются двери магазинов, сменяются пассажиры на остановке. То есть в принципе мир продолжает жить и без тебя. Понимать это больно. Но важно.</p>
+<!-- 
 {% include rubrikator.html %}
-<div>
-  {% for post in site.categories.[page.category] %}
-     <span class="post-category"><a href="">{{ post }}</a></span>
+-->
+
+<section>
+  <!-- {% for post in site.categories[page.categories] %} -->
+  {% for post in site.categories.Всячина %}
+    <!-- <i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date}}</time>  -->
+    <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+    <!-- <span class="category"><i class="icon-tag"></i> {{post.categories}}</span> -->
   {% endfor %}
-</div>
-<div class="posts">
-  {% for post in site.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <span class="post-date"><a href="">{{ post.category }}</a></span>
-     {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-<div class="pagination">
-  {% if paginator.posts %}
-    {% if paginator.next_page %}
-      <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-    {% else %}
-      <span class="pagination-item older">Older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-      {% else %}
-        <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-      {% endif %}
-    {% else %}
-      <span class="pagination-item newer">Newer</span>
-    {% endif %}
-  {% endif %}
-</div> -->
+</section>
