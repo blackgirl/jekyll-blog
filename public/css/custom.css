@@ -409,12 +409,14 @@ blockquote+span {
 
 @media only screen and (min-width: 768px)
     .post aside,
-    .page aside, ul.related {
+    .page aside,
+    ul.related {
         float: right;
         width: 27%;
     }
     .post article,
-    .page article,.word article {
+    .page article,
+    .word article {
         float: left;
         width: 67%;
         margin: 0 3%;
