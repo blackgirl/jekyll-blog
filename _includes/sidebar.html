@@ -17,24 +17,23 @@
      {% assign pages_list = site.pages | sort:"url" %}
       {% for node in site.pages %}
         {% if node.title != null %}
-          {% if node.title != 'Геометрия' %}
+          <!-- {% if node.title != 'Геометрия' %} -->
             {% if node.layout == "page" %}
               <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
             {% endif %}
-          {% endif %}
+          <!-- {% endif %} -->
         {% endif %}
       {% endfor %}
     <li><a href="{{ site.baseurl }}/about" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">Законы</a></li>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Школа&nbsp;<span class="caret"></span></a>
+    <!-- <li class="dropdown">
+      <a href="{{ site.baseurl }}/school" class="dropdown-toggle" data-toggle="dropdown">Школа&nbsp;<span class="caret"></span></a>
       <ul class="dropdown-menu" role="menu">
-        <!-- <li><a href="#" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}">&nbsp;•&nbsp;Action</a></li> -->
-        <li><a href="{{ site.baseurl }}/geometry" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}">&nbsp;•&nbsp;Геометрия</a></li>
-        <li><a href="{{ site.baseurl }}/rus" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}">&nbsp;•&nbsp;Русский язык</a></li>
+        <li><a href="{{ site.baseurl }}/geometry" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">&nbsp;•&nbsp;Геометрия</a></li>
+        <li><a href="{{ site.baseurl }}/rus" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">&nbsp;•&nbsp;Русский язык</a></li>
         <li class="sidebar-nav-itemdivider"></li>
-        <li><a href="{{ site.baseurl }}/obzh" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}">&nbsp;•&nbsp;ОБЖ</a></li>
+        <li><a href="{{ site.baseurl }}/obzh" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">&nbsp;•&nbsp;ОБЖ</a></li>
         <li class="divider"></li>
-        <li><a href="{{ site.baseurl }}/lit" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}">&nbsp;•&nbsp;Литература</a></li>
+        <li><a href="{{ site.baseurl }}/lit" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">&nbsp;•&nbsp;Литература</a></li> -->
       </ul>
     </li>           
   </ul>

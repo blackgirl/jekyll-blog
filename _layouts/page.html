@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
-<div class="border-top salat"></div>
 <div class="masthead">
     <div class="container">
       <h3 class="masthead-title back">
-        <a href="../" title="Vocabulory" class="back">&larr;&nbsp;Назад в будущее</a>
-        <small></small>
+      	{% unless page.back %}
+        <a href="../" title="Go back" class="back">&larr;&nbsp;Назад в будущее</a>
+        {%else%}
+        <a href="{{page.back}}" title="Go back" class="back">&larr;&nbsp;Назад в будущее</a>
+        {%endunless%}
+
       </h3>
     </div>
 </div>

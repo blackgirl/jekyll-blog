@@ -41,13 +41,18 @@ body {
 .text-center {
     text-align: center;
 }
+.text-right {
+    text-align: right;
+}
 .light {
     font-weight: 200;
 }
 .bold {
     font-weight: 800;
 }
-
+.align-top {
+    vertical-align:top;
+}
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
@@ -89,11 +94,11 @@ h6 {
     padding: 0px;
     text-transform: uppercase;
     font-size: 0.8em;
-    color: #7e7e7e;
+    /*color: #7e7e7e;*/
     letter-spacing: 2px;
 }
 /* Lists */
-ul, ol, dl {
+ul, dl {
     list-style-type: none;
 }
 ul:not(.related, .nav) li:before {
@@ -106,7 +111,7 @@ details ul li:before {
     color: #1d92cf;
 }
 /* Links */
-a {
+a, summary, .back {
     color: #1d92cf;
     text-decoration: none;
     line-height: inherit;
