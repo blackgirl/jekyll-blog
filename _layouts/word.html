@@ -1,19 +1,16 @@
 ---
 layout: default
 ---
-<div class="border-top salat"></div>
-
+<!-- <div class="border-top salat"></div> -->
 <div class="masthead">
     <div class="container">
       <h3 class="masthead-title back">
-        <a href="{{site.baseurl}}/slovar" title="Vocabulory" class="back">&larr;&nbsp;Назад в будущее</a>
-        <small></small>
+        {% include nav-back.html back='slovar' b-title='Vocabulory' %}
       </h3>
     </div>
 </div>
 
-
-<div class="word">
+<div class="word cf">
   <h1 class="word-title">&sect;&nbsp;{{ page.title }}</h1>
   <article>
   {{ content }}

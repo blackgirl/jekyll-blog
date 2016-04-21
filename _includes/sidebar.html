@@ -10,21 +10,23 @@
       <span class="icon-bar"></span>
       <span class="icon-bar-opened close hairline"></span>
     </button>
-    <div class="navbar-brand"><a href="{{ site.baseurl }}/" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}">ABRACADABRA</a></div>
   </div>
 <div class="collapse navbar-collapse" id="navbar-brand">
-  <ul class="nav navbar-nav navbar-right">
-     {% assign pages_list = site.pages | sort:"url" %}
+  {% include logo.html %}
+  <ul class="nav navbar-nav navbar-left">
+     {% assign pages_list = site.pages limit:2 | sort:"url" %}
       {% for node in site.pages %}
         {% if node.title != null %}
-          <!-- {% if node.title != 'Геометрия' %} -->
+          {% if node.back == null %}
             {% if node.layout == "page" %}
               <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
             {% endif %}
-          <!-- {% endif %} -->
+          {% endif %}
         {% endif %}
       {% endfor %}
-    <li><a href="{{ site.baseurl }}/about" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">Законы</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{{ site.baseurl }}/about" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">Законы</a></li>
     <!-- <li class="dropdown">
       <a href="{{ site.baseurl }}/school" class="dropdown-toggle" data-toggle="dropdown">Школа&nbsp;<span class="caret"></span></a>
       <ul class="dropdown-menu" role="menu">
@@ -35,8 +37,8 @@
         <li class="divider"></li>
         <li><a href="{{ site.baseurl }}/lit" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">&nbsp;•&nbsp;Литература</a></li> -->
       </ul>
-    </li>           
-  </ul>
+    <!-- </li>            -->
+  <!-- </ul> -->
 </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
