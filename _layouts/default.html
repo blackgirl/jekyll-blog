@@ -4,7 +4,7 @@
   <body class="theme-base-00 layout-reverse sidebar-overlay">
     {% include sidebar.html %}
     <div class="wrap">
-      <div class="container content section cf">
+      <div class="container content {%if page.main-class%}{{page.main-class}}{%endif%} section cf">
         {{ content }}
       </div>
     </div>

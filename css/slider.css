@@ -1,0 +1,75 @@
+html,
+body {
+	height: 100%;
+	width;
+	100%;
+	margin: 0;
+	padding;
+	0;
+}
+
+.slider-wrap {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	top: 88%;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+}
+
+.slider label {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.slider label:hover {}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	background-color: #fff;
+	transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+	animation-name: proximo;
+}
+
+[id^="slide"]:checked + .slide h1 {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.5s 0.5s;
+}
+
+[id^="slide"]:checked + .slide h2 {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 1s 1s;
+}
+
+
+/* .slide-one {  
+  background-image:url(https://unsplash.it/1900/1200/?random);
+}
+.slide-two {
+  background-image:url(https://unsplash.it/1800/860/?random);
+}
+.slide-three {
+  background-image:url(https://unsplash.it/1500/720/?random);
+}
+.slide-four {
+  background-image:url(https://unsplash.it/1500/1350/?random);
+} */

@@ -1,0 +1,10 @@
+url: links
+name: Барахло
+icon: icon-images
+intro: Всё подряд всех цветов и размеров
+items:
+  - name: Tom Preston-Werner
+    github: mojombo
+
+  - name: Parker Moore
+    github: parkr

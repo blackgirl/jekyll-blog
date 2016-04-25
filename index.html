@@ -1,9 +1,38 @@
 ---
 layout: default
+main-class: 'main-categories'
 <!-- ephitaphy: Память — писарь нашей души &nbsp;&rarr; -->
 <!-- title: Black Hole -->
 ---
 <!-- <p class="page-intro one-three col">Ещё рано — ещё так многое по плечу, не&nbsp;взяла кредитов, не&nbsp;родила детей. Не&nbsp;наелась дерьма по самое не хочу, не&nbsp;устала любить людей.</p> -->
+<!-- <div class="main-categories"> -->
+<ul>
+{% for type_hash in site.data.types %}
+{% assign type = type_hash[1] %}
+  <li>
+  	<div class="category-img">
+  		<div class="category-icon {{type.icon}}"></div>
+  	</div>
+  	<div class="category-title">
+    <a href="{{ site.url }}/{{type.url}}">
+      {{ type.name }}
+    <!-- <p>({{ type.items | size }} items)</p> -->
+    <p class="category-intro">{{type.intro}}</p>
+    </a>
+  	</div>
+  </li>
+{% endfor %}
+</ul>
+
+<h1 class="all-pages">All Includive</h1>
+<ul class="pages-list">
+	{%for page in site.pages%}
+	{%if page.title%}
+	<li><a href="{{page.url}}">{{page.title}}</a></li>
+	{%endif%}
+	{%endfor%}
+</ul>
+<!-- </div> -->
 <div class="poetry hide">
 	<p class="one-two col">Звонче песен молчания зной<br>
 	Слаще меда твои слова<br>

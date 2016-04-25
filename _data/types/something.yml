@@ -1,0 +1,7 @@
+url: About
+name: Манифестос
+icon: icon-news
+intro: Стрижали всех молекул и планет
+items:
+  - name: John Doe
+    github: jdoe

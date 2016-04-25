@@ -1,0 +1,9 @@
+url: contact
+name: Ясылки
+icon: icon-past
+intro: Аккаунты всех времен и состояний
+items:
+  - name: Tom Preston-Werner
+    github: mojombo
+  - name: Parker Moore
+    github: parkr
