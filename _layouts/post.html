@@ -1,11 +1,12 @@
 ---
 layout: default
+main-class: 'post'
 ---
-<div class="post">
+<div class="post cf">
   <div class="post-head">
     <p class="masthead-title back">
       {% include nav-back.html back='archive' b-title='Archive' %}
-      <small class="post-date">{{ page.date | date_to_string }}</small>
+      <small class="post-date">{%if page.date %}{{ page.date | date_to_string }}{%endif%}</small>
     </p>
     <h1 class="post-title">{{ page.title | upcase }}</h1>
   </div>
@@ -18,7 +19,7 @@ layout: default
   {{ content }}
 </div>
 
-<div class="related">
+<div class="related cf">
  <ul class="div related">
     {% for tag in page.tags %}
       <li>

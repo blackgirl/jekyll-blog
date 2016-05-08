@@ -1,0 +1,24 @@
+---
+layout: page
+<!-- title: Словарь -->
+---
+<blockquote><p class="page-intro">Два дня в твоей жизни самые важные: день, когда ты родился и день, когда понял зачем.
+</p></blockquote>
+<span>— Марк Твен </span>             
+<div class="posts">
+  {% for post in site.posts %}
+   {% if post contains 'astro' %}
+   {% assign node = post[1] %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ node.url }}">
+        {{ node.title }}
+      </a>
+    </h1>
+    <span class="post-date">{{ node.date | date_to_string }}</span>
+    <span class="post-date"><a href="">{{ node.category }}</a></span>
+     <!-- {{ post.content }} -->
+  </div>
+    {% endif %}
+  {% endfor %}
+</div>

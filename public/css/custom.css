@@ -31,7 +31,7 @@
   visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
   height: 0;  /* сделать высоту 0, чтобы не занимал место */
 }
-
+html, body {height:100%;}
 body {
     padding: 0;
     margin: 0;
@@ -175,7 +175,12 @@ img {
     color: #197eb2;
     font-size: 1.25rem;
 }
-
+.post .source {
+    color: #aaa;
+    font-style: italic;
+    border: 1px dotted #aaa;
+    padding: 15px;
+}
 /* for ex. Category name */
 .type-label {
     font-family: "Proxima Nova Condensed Bold","Proxima Nova Condensed","proxima-nova-condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -363,6 +368,9 @@ details[open] summary:before {
     max-width: 1000px;
     /*background-color: #F8F8F8;*/
 }
+.wrap .section.post {
+    margin: 0 auto;
+}
 .wrap .section.main-categories {
     white-space: nowrap;
     margin: 0 auto;
@@ -402,6 +410,9 @@ details[open] summary:before {
 .category-img .category-icon.icon-images {
     /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath fill='%23FC0' d='M9 13h40v30H9z'/%3E%3Ccircle fill='%23E00' cx='19' cy='24' r='4'/%3E%3Cpath fill='%23393837' d='M9 43l10-10 5 5 10-10 15 15'/%3E%3C/svg%3E");*/
     background-image: url("../icons/image.png");
+}
+.category-img .category-icon.icon-quotes {
+    background-image: url("../icons/notes.png");
 }
 .category-img .category-icon.icon-cube {
     /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath fill='%234B82D7' d='M56 56H0V0h56v56zM11.9 44.1h32.3V11.9H11.9v32.2z'/%3E%3C/svg%3E");*/
@@ -516,10 +527,9 @@ blockquote+span {
     z-index: 2;
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) {
     .post aside,
-    .page aside,
-    ul.related {
+    .page aside {
         float: right;
         width: 27%;
     }
@@ -527,8 +537,12 @@ blockquote+span {
     .page article,
     .word article {
         float: left;
-        width: 67%;
+        width: 75%;
         padding: 0 3%;
+    }
+    .post article img {
+        display:block;
+        margin: 0 auto;
     }
 }
 .poetry {
@@ -537,7 +551,22 @@ blockquote+span {
     padding: 0 15px;
 }
 
-
+/* modal overlay */
+.modal.fade.in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f5f5f5;
+}
+.modal.fade.in .close {
+  border: none;
+  background: none;
+  float: right;
+  margin: 15px;
+  cursor: pointer;
+}
 /* Symbols content */
 {
     content: "☜ ";

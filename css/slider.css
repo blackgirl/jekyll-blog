@@ -60,6 +60,28 @@ body {
 	transition: all 1s 1s;
 }
 
+/* ARROWS */
+
+/* <div class="grow">
+<a href="icsa.html"><img class="left" src="icons/leftarrow.png"></a>
+</div> */
+.btn-left {
+	position: fixed;
+    top: 50%;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+}
+/* <div class="grow">
+<a href="tasus.html"><img class="right" src="icons/rightarrow.png"></a>
+</div> */
+.btn-right {
+	position: fixed;
+    top: 50%;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+}
 
 /* .slide-one {  
   background-image:url(https://unsplash.it/1900/1200/?random);

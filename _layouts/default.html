@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   {% include head.html %}
-  <body class="theme-base-00 layout-reverse sidebar-overlay">
+  <body class="theme-base-00 layout-reverse sidebar-overlay" style="background-image:url('{%if page.bg%}{{page.bg}}{%endif%}');">
     {% include sidebar.html %}
     <div class="wrap">
-      <div class="container content {%if page.main-class%}{{page.main-class}}{%endif%} section cf">
+      <div class="container content {%if page.main-class%}{{page.main-class}}{%endif%}{% if page.path contains '_posts' %} post {%endif%} section cf">
         {{ content }}
       </div>
     </div>

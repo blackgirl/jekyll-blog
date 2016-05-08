@@ -1,0 +1,27 @@
+url: school/quote
+name: Изречения
+icon: icon-quotes
+intro: С миру по нитке, а миру — мир
+items:
+  - name: Философия
+    path: phylo
+  - name: Человек
+    path: human
+  - name: Любовь
+    path: love
+  - name: Дружба
+    path: friends
+  - name: Сбовода
+    path: freedom
+  - name: Семья
+    path: family
+  - name: Движение
+    path: move
+  - name: Время
+    path: time
+  - name: Смерть
+    path: death
+  - name: М и Жо
+    path: wc
+  - name: Природа
+    path: nature

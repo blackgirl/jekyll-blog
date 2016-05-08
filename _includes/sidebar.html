@@ -16,11 +16,13 @@
   <ul class="nav navbar-nav navbar-left">
      {% assign pages_list = site.pages limit:2 | sort:"url" %}
       {% for node in site.pages %}
+        {% if node.is_top %}
         {% if node.title != null %}
           {% if node.back == null %}
             {% if node.layout == "page" %}
               <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
             {% endif %}
+          {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}
