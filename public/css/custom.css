@@ -155,7 +155,10 @@ img {
     vertical-align: middle;
     max-width: 100%;
 }
-
+p img {
+    width: 50%;
+    float: left;
+}
 /* Pages and blocks */
 .wrap {
     /*padding: 0 2rem;*/
@@ -224,6 +227,13 @@ details[open] summary:before {
 .col {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+}
+.triple-p p+p {
+    padding-left: 15px;
+}
+.triple-p p {
+    width: 32%;
+    float: left;
 }
 .one-two {
     width: 50%;
