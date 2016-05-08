@@ -1,7 +1,7 @@
 {% assign back = page.back %}
 {% assign b-title = page.b-title || '' %}
 {% if back == null %}
-	<a href="../" title="Go back Home" class="back">&larr;&nbsp;Назад в будущее</a>
+	<a href="{{ site.url }}" title="Go back Home" class="back">&larr;&nbsp;Назад в будущее</a>
 {% else %}
 	<a href="{{ site.url }}{{back}}/" title="Back To&nbsp;{{b-title}}" class="back">&larr;&nbsp;Назад в будущее</a>
 {%endif%}

@@ -368,6 +368,7 @@ details[open] summary:before {
     max-width: 1000px;
     /*background-color: #F8F8F8;*/
 }
+.wrap .section.word,
 .wrap .section.post {
     margin: 0 auto;
 }
