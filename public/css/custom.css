@@ -415,29 +415,27 @@ details[open] summary:before {
     /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='-31 -13 56 56'%3E%3Cpath fill='%23F00' d='M5.3-7.1h-7c-6.9 0-12.7 5-12.7 15 0 5.9 2.9 10.2 7.8 12.5L-16 36.8c-.2.6 0 1 .6 1h4.4c.4 0 .6-.2.7-.4l8.5-16.2h3v16.2c0 .2.2.4.4.4h3.8c.4 0 .6-.2.6-.4V-6.5c0-.4-.2-.6-.7-.6zM1.2 17.3h-2.6c-4.1 0-7.9-2.9-7.9-10C-9.4 0-5.7-3.2-2-3.2h3.2v20.5z'/%3E%3C/svg%3E");*/
 }
 .category-img .category-icon.icon-news {
-    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='-392 270.3 56 56'%3E%3Cpath fill='%23C6C3B9' d='M-381 312.3l27.2 8.4v-8.4'/%3E%3Cpath fill='%23DDDAD3' d='M-381 276.3h34v36h-34z'/%3E%3Cpath fill='%23222' d='M-375 281.3h22v6h-22z'/%3E%3Cpath fill='%23F00' d='M-375 291.3h10v15h-10z'/%3E%3Cpath fill='%23222' d='M-363 297.3h10v3h-10zm0-6h10v3h-10zm0 12h10v3h-10z'/%3E%3C/svg%3E");*/
     background-image: url("../icons/lightbulb_idea.png");
 }
+.category-img .category-icon.icon-glass {
+    background-image: url("../icons/Glasses.png");
+}
 .category-img .category-icon.icon-images {
-    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath fill='%23FC0' d='M9 13h40v30H9z'/%3E%3Ccircle fill='%23E00' cx='19' cy='24' r='4'/%3E%3Cpath fill='%23393837' d='M9 43l10-10 5 5 10-10 15 15'/%3E%3C/svg%3E");*/
     background-image: url("../icons/image.png");
 }
 .category-img .category-icon.icon-quotes {
     background-image: url("../icons/notes.png");
 }
 .category-img .category-icon.icon-cube {
-    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath fill='%234B82D7' d='M56 56H0V0h56v56zM11.9 44.1h32.3V11.9H11.9v32.2z'/%3E%3C/svg%3E");*/
     background-image: url("../icons/ruler.png")
 }
 .category-img .category-icon.icon-cloud {
     background-image: url("https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/cloud.png");
 }
 .category-img .category-icon.icon-slovar {
-    /*background-image: url("http://icon-icons.com/icons2/152/PNG/128/dictionary_21800.png");*/
     background-image: url("../icons/book.png")
 }
 .category-img .category-icon.icon-past {
-    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='56' height='56' viewBox='0 0 56 56' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cpath d='M22.11 10.603c-5.695 1.557-8.87 5.643-10.756 11.734-1.193 3.853-3.733 6.266-3.733 6.266l17.94-5.06 17.76-4.806c-.02 0-3.136-.68-6.08-3.425-4.66-4.32-9.43-6.246-15.126-4.71z' fill='%23000'/%3E%3Cpath d='M55.692 24.166c-1.56-5.837-15.24-7.22-30.58-3.113C9.777 25.178-1.385 33.35.172 39.21c1.08 4.066 7.988 5.992 17.245 5.39-.385-.35-.635-.74-.77-1.227-.847-3.19 4.773-6.48 12.143-8.465 7.37-2.004 13.816-1.887 14.644 1.207.134.486.096.953-.058 1.46 8.352-4.165 13.413-9.322 12.316-13.41z' fill='%234981D7'/%3E%3Cpath d='M31.348 44.58c7.43-2.005 12.97-5.39 12.163-8.504-.804-3.114-7.29-3.23-14.72-1.226-7.43 2.004-12.99 5.37-12.16 8.504.828 3.152 7.294 3.25 14.72 1.225z' fill='%23E7E7E7'/%3E%3C/g%3E%3C/svg%3E");*/
     background-image: url("../icons/clip.png")
 }
 .category-title {
