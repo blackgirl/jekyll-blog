@@ -419,9 +419,15 @@ details[open] summary:before {
 }
 .category-img .category-icon.icon-glass {
     background-image: url("../icons/Glasses.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .category-img .category-icon.icon-images {
     background-image: url("../icons/image.png");
+}
+.category-img .category-icon.icon-astro {
+    background-image: url("../icons/sunglasses.png");
 }
 .category-img .category-icon.icon-quotes {
     background-image: url("../icons/notes.png");

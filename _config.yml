@@ -16,6 +16,7 @@ paginate_path: "/blog/:num/"
 
 gems:
 - jekyll-paginate
+
 # About/contact
 author:
   name:              Alyonka Chornaya
@@ -34,6 +35,7 @@ author:
 version:             1.0.0
 plugins_dir:            "/_plugins"
 exclude: ['Gemfile']
+
 # Pages
 pages:       
   WTF: '/about'
@@ -41,5 +43,10 @@ pages:
   Cловарь: '/slovar'
   Бложек: '/blog'
   Feed: '/atom.xml'
+
+#collections
+# collections:
+#   astro:
+#     title: 'Астрология'
 
 # Custom vars
