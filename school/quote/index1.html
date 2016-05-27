@@ -1,0 +1,23 @@
+---
+layout: page
+main-class: 'main-categories'
+---
+{% assign type = site.data.types.citaty %}
+<ul>
+	{% for type_hash in type.items %}
+	{% assign item = type_hash[1] %}
+  <li>
+  	<div class="category-img">
+  		<div class="category-icon {{item.path}}"></div>
+  	</div>
+
+  	<div class="category-title">
+    <a href="{{ site.url }}/{{type.url}}/{{item.path}}">
+      {{ item.name }}
+    <!-- <p>({{ type.items | size }} items)</p> -->
+    <!-- <p class="category-intro">{{type.intro}}</p> -->
+    </a>
+  	</div>
+  </li>
+{% endfor %}
+</ul>
