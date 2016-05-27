@@ -3,5 +3,10 @@ layout: page
 type: quote
 ---
 <ul>
-{% include category-list.html %}
+{% assign posts = site.pages %}
+{%for post in posts%}
+	{%if post.path contain page.type %}
+	<li><a href="{{post.url}}">{{post.title}}</a></li>
+	{%endif%}
+{%endfor%}
 </ul>
