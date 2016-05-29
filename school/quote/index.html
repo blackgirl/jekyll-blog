@@ -1,11 +1,12 @@
 ---
 layout: page
+title: Цитатник
 type: quote
 ---
 <ul>
 {% assign posts = site.pages %}
-{%for post in posts%}
-	{%if post.path contain page.type %}
+{% for post in posts %}
+	{%if post.path contains page.type %}
 	<li><a href="{{post.url}}">{{post.title}}</a></li>
 	{%endif%}
 {%endfor%}
