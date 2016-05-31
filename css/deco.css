@@ -89,6 +89,10 @@ p.bordered {
   border: 3px solid #a1e663;
   padding: 15px;
 }
+p.bordered.zz {
+    background: url(http://lifehacker.ru/wp-content/themes/lifehacker_3/images/cut.svg) repeat-x 0 0, url(http://lifehacker.ru/wp-content/themes/lifehacker_3/images/cut.svg) repeat-x -13px bottom;
+    padding: 30px;
+}
 p.mark {
   float: left;
   width: 40%;
