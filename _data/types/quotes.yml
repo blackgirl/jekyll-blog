@@ -1,6 +1,6 @@
 url: school/quote
 name: Изречения
-icon: icon-quotes
+icon: quote-right
 intro: С миру по нитке, а миру — мир
 items:
   - name: Философия

@@ -11,7 +11,9 @@ main-class: 'main-categories'
 {% assign type = type_hash[1] %}
   <li>
   	<div class="category-img">
-  		<div class="category-icon {{type.icon}}"></div>
+  		<div class="category-icon {{type.icon}}">
+  			<i class="fa fa-{{type.icon}}" aria-hidden="true"></i>
+  		</div>
   	</div>
   	<div class="category-title">
     <a href="{{ site.url }}/{{type.url}}">
