@@ -84,6 +84,9 @@
     font-size: 1.75em;
     color: gold;
 }
+summary .fa-tag {
+    font-size: .75em;
+}
 /* Text decoratioon */
 p.bordered {
   border: 3px solid #a1e663;

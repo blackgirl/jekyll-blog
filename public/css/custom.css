@@ -156,7 +156,7 @@ img {
     max-width: 100%;
 }
 p img {
-    width: 50%;
+    max-width: 50%;
     float: left;
 }
 /* Pages and blocks */
