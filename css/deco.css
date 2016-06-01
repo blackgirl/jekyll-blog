@@ -103,12 +103,21 @@ p.mark {
   background-color: #E2EEF2;
   padding: 20px;
 }
-p>span::before {
-    content: '';
-    border-bottom: 3px solid #ffe70d;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    padding-bottom: 2px;
+p>span {
+  border-bottom: 3px solid #ffe70d;
+}
+.text-title>span{
+  font-weight: 600;
+  border: none;
+  border-left: 6px solid #ffe70d;
+  padding-left: 5px;
+}
+.text-title.s-color>span {
+  border: none;
+}
+.text-title.m-color>span {
+  border-color: #bdf648;
+}
+.text-title.l-color>span {
+  border-color: #e55525;
 }
