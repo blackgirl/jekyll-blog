@@ -1,6 +1,6 @@
 url: links
 name: Барахло
-icon: paperclip
+icon: trash-o
 intro: Всё подряд всех цветов и размеров
 items:
   - name: Tom Preston-Werner
