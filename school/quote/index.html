@@ -6,7 +6,7 @@ type: quote
 <ul>
 {% assign posts = site.pages %}
 {% for post in posts %}
-	{%if post.path contains page.type %}
+	{%if post.path contains page.type and post.url != page.url %}
 	<li><a href="{{post.url}}">{{post.title}}</a></li>
 	{%endif%}
 {%endfor%}

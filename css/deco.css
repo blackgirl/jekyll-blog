@@ -37,7 +37,6 @@
   width: 100%;
   top: 50%;
   left: 1px;
-  /*margin-top: -1px;*/
   background: #197eb2;
 }
 .close::before {
@@ -87,12 +86,13 @@
 summary .fa-tag {
     font-size: .75em;
 }
+
 /* Text decoratioon */
 p.bordered {
   border: 3px solid #a1e663;
   padding: 15px;
 }
-p.bordered.zz {
+p.bordered.zz, hr {
     background: url(http://lifehacker.ru/wp-content/themes/lifehacker_3/images/cut.svg) repeat-x 0 0, url(http://lifehacker.ru/wp-content/themes/lifehacker_3/images/cut.svg) repeat-x -13px bottom;
     padding: 30px;
 }
@@ -120,4 +120,11 @@ p>span {
 }
 .text-title.l-color>span {
   border-color: #e55525;
+}
+
+/* Backgrounds */
+body.my-past {
+    background: url(http://dovga.net/images/photo/2397-sobranie-lyubiteley-miki-mausa-1930-ie-goda-1000.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
 }
