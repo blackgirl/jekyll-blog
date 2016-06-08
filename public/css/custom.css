@@ -36,6 +36,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-family:'PT Sans',"Helvetica Neue",Arial,Helvetica,sans-serif;
     font-weight: normal;
     line-height: 1.5;
     color: #0a0a0a;
@@ -492,6 +493,7 @@ blockquote {
     margin: 30px 0;
     padding: 0 15px;
     border-left: 4px solid #00bce7;
+    background: #f9f9f9;
 }
 blockquote p {
     padding: 15px 0;
