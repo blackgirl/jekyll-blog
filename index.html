@@ -26,8 +26,8 @@ main-class: 'main-categories'
 {% endfor %}
 </ul>
 
-<h1 class="all-pages">All Includive</h1>
-<ul class="pages-list">
+<!-- <h1 class="all-pages">All Includive</h1> -->
+<ul class="pages-list hide">
 	{%for page in site.pages%}
 	{%if page.title%}
 	<li><a href="{{page.url}}">{{page.title}}</a></li>

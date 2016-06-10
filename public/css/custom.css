@@ -121,6 +121,15 @@ ul:not(.related, .nav) li:before {
 details ul li:before {
     color: #1d92cf;
 }
+
+/* Tables */
+table {border: 1px solid #eee;}
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+table th + th, table td + td {border-left: 1px solid #eee;}
+
 /* Links */
 a, summary, .back {
     color: #1d92cf;

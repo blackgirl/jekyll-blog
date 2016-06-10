@@ -206,7 +206,7 @@
 	border:1px solid transparent;
 	/*new*/
 	height: 80px;
-    border-bottom: 1px solid #E2E3E4;
+    /*border-bottom: 1px solid #E2E3E4;*/
 }
 .navbar > .container {
     white-space: nowrap;
