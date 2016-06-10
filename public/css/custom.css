@@ -110,7 +110,7 @@ h6 {
 }
 /* Lists */
 ul, dl {
-    list-style-type: none;
+    list-style-type: square;
 }
 ul:not(.related, .nav) li:before {
     content: "\2014\00A0 ";
