@@ -512,11 +512,11 @@ blockquote + span {
     display: block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    line-height: .5;
+    line-height: 1;
     text-align: right;
     background: none;
-    color: #aaa;
-    margin-bottom: 25px;
+    /*color: #aaa;*/
+    /*margin-bottom: 25px;*/
 }
 .quote {
     line-height: .75;
