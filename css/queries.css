@@ -2,4 +2,12 @@
 	.one-three, .one-four, .one-five {
 		width:50%;
 	}
+
+	.main-categories {
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.main-categories ul li {
+		width: 100%;
+	}
 }
