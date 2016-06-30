@@ -36,13 +36,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif !important;
-    font-family:'PT Sans',"Helvetica Neue",Arial,Helvetica,sans-serif;
+    /*font-family:'PT Sans',"Helvetica Neue",Arial,Helvetica,sans-serif;*/
     font-weight: normal;
     line-height: 1.5;
+    font-size: 14px;
     color: #0a0a0a;
     background: #fefefe;
     -webkit-font-smoothing: antialiased;
-    /*background-color: #F8F8F8;*/
 }
 .hide {
 	display: none;
@@ -64,53 +64,51 @@ body {
 }
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-    text-rendering: optimizeLegibility;
-    /* letter-spacing: -.025rem; */
-    font-size: 2.5rem;
-    font-weight: 400;
     line-height: 1.4;
     color: #222;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    font-size: 4.5em;
+    font-weight: 400;   
 }
 h2 {
-    margin: 1.5rem 0;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 2em 0;
 }
-h3 {
-    font-size: 26px;
+/* Subheader */
+/*h3 {
+    font-size: 2.5em;
     margin-top: 20px;
     color: #333;
-}
+}*/
 
-/* Subheader */
-h6 {
+h3, h4, h5, h6 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #7e7e7e;
     margin: 0px;
     padding: 0px;
-    text-transform: uppercase;
-    font-size: 0.8em;
     margin-top: -10px;
-    color: #7e7e7e;
-    letter-spacing: 2px;
 }
 .subheader {
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1.4;
     color: #8a8a8a;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
 }
 .back {
-    /*margin-top: 40px;*/
-    margin: 0;
-    /*padding: 0px;*/
-    padding: 15px;
-    text-transform: uppercase;
     font-size: 0.8em;
-    /*color: #7e7e7e;*/
     letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px;
 }
 /* Lists */
-ul, dl {
+ul:not(.related), dl {
     list-style-type: square;
 }
 ul:not(.related, .nav) li:before {
@@ -118,6 +116,12 @@ ul:not(.related, .nav) li:before {
 }
 .nav>li:before {
     content: '';
+}
+ul.related {
+    padding: 0;
+}
+ul.related li {
+    list-style: none;
 }
 details ul li:before {
     color: #1d92cf;
@@ -144,7 +148,7 @@ a:hover, a:focus {
 
 /* Text */
 p {
-    font-size: 0.9375rem;
+    font-size: 1.5em;
     line-height: 1.6;
     margin-bottom: 1rem;
     text-rendering: optimizeLegibility;
@@ -159,7 +163,6 @@ p {
 
 /* Pics & Icons etc. */
 img {
-    /*width: 100%;*/
     height: auto;
     overflow: hidden;
     display: inline-block;
@@ -176,7 +179,7 @@ p img {
     /*background-color: #F8F8F8;*/
 }
 .page-intro {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.6;
     color: #777;
     margin-bottom: 4rem;
@@ -187,7 +190,7 @@ p img {
 }
 .page-intro:first-letter {
     color: #197eb2;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 .post .source {
     color: #aaa;
@@ -385,9 +388,9 @@ details[open] summary:before {
 
 /*new*/
 .wrap .section {
-    padding: 0 2rem;
-    max-width: 1000px;
-    /*background-color: #F8F8F8;*/
+    padding: 0;
+    width: 100%;
+    background: none;
 }
 .wrap .section.word,
 .wrap .section.post {
@@ -396,7 +399,6 @@ details[open] summary:before {
 .wrap .section.main-categories {
     white-space: nowrap;
     margin: 0 auto;
-    /*margin-top: 45px;*/
     padding: 0;
     min-width: 670px;
     left: 0;
@@ -480,8 +482,12 @@ details[open] summary:before {
 }
 /* POST */
 article {
-    /*background-color: #F8F8F8;*/
     background-color: #FeFeFe;
+}
+article li {
+    font-size: 1.5em;
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 .post-head {
     /*text-align: right;*/
@@ -492,7 +498,6 @@ article {
 .post-date {
     color: #ccc;
     float: right;
-    /*margin-left: -88px;*/
 }
 .tag {
     color: #268bd2;
@@ -516,8 +521,6 @@ blockquote + span {
     line-height: 1;
     text-align: right;
     background: none;
-    /*color: #aaa;*/
-    /*margin-bottom: 25px;*/
 }
 .quote {
     line-height: .75;
@@ -538,7 +541,7 @@ blockquote + span {
     height: 100px;
 }
 #shareasale .tertiary-content .quote p, #coursecatalog .tertiary-content .quote p {
-    font-size: 17px;
+    font-size: 1.75em;
     line-height: 1.9;
     font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -549,16 +552,24 @@ blockquote + span {
 
 @media only screen and (min-width: 768px) {
     .post aside,
-    .page aside {
+    .page aside,
+    .related.aside {
         float: right;
-        width: 27%;
+        width: 24%;
     }
-    .post article,
     .page article,
     .word article {
         float: left;
         width: 75%;
         padding: 0 3%;
+    }
+    .post .post {
+        width: 75%;
+        display: inline-block;
+    }
+    .post-head h1,
+    .post article {
+        padding-left: 10%;
     }
     .post article img {
         display:block;

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'cf_scriptregular';
+  src: url("https://www.cysticfibrosis.org.uk/assets/fonts/cfscript-webfont.eot");
+  src: url("https://www.cysticfibrosis.org.uk/assets/fonts/cfscript-webfont.eot?#iefix") format('embedded-opentype'), url("https://www.cysticfibrosis.org.uk/assets/fonts/cfscript-webfont.woff2") format('woff2'), url("https://www.cysticfibrosis.org.uk/assets/fonts/cfscript-webfont.woff") format('woff'), url("https://www.cysticfibrosis.org.uk/assets/fonts/cfscript-webfont.ttf") format('truetype'), url("https://www.cysticfibrosis.org.uk/assets/fonts/cfscript-webfont.svg#cf_scriptregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#bg.fall-angel {
+  background: url(http://uploads.webflow.com/5509bda13cd56c1a716d17d1/5567f6f43834c3014ec7d12a_0023_1.png) no-repeat;
+}
 /* Burger menu icon (it's lines) */
 .navbar-toggle.collapsed .icon-bar {
   display:block;
@@ -88,6 +98,9 @@ summary .fa-tag {
 }
 
 /* Text decoratioon */
+p.handwritten {
+    font-family: 'cf_scriptregular';
+}
 p.bordered {
   border: 3px solid #a1e663;
   padding: 15px;
@@ -103,8 +116,13 @@ p.mark {
   background-color: #E2EEF2;
   padding: 20px;
 }
-p>span {
+p>span.line {
   border-bottom: 3px solid #ffe70d;
+}
+p>span.marker {
+  line-height: 1.8;
+  background: #ff0;
+  color: #000;
 }
 .text-title>span{
   font-weight: 600;
