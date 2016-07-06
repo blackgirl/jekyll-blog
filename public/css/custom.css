@@ -523,10 +523,14 @@ article li {
     font-style: italic;
 }
 blockquote, q {
+    display: block;
     margin: 30px;
     padding: 0 15px;
     border-left: 7px solid #00bce7;
     background: #f9f9f9;
+}
+q:before, q:after {
+    content: "";
 }
 blockquote p {
     padding: 15px 0;
