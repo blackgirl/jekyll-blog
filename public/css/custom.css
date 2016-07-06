@@ -167,6 +167,7 @@ a:hover, a:focus {
 p {
     font-size: 1.5em;
     line-height: 1.6;
+    font-weight: normal;
     margin-bottom: 1rem;
     text-rendering: optimizeLegibility;
     color: #222222;
