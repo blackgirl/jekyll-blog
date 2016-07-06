@@ -15,6 +15,11 @@
   position: relative;
   left: 40px;
 }*/
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /* General rules */
 *, *:before, *:after {
@@ -69,13 +74,23 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
 }
 h1 {
-    font-size: 4.5em;
-    font-weight: 400;   
+    /*font-size: 4.5em;*/
+    /*font-weight: 400;*/
+    font-family: Verdana;
+    font-weight: bold;
+    line-height: 28px;
+    padding-left: 0;
+    margin: 40px 0px 40px 0px; 
 }
 h2 {
-    font-size: 2.5em;
+    /*font-size: 2.5em;
     font-weight: 800;
-    margin: 2em 0;
+    margin: 2em 0;*/
+    font-family: Verdana;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
 }
 /* Subheader */
 /*h3 {
@@ -137,10 +152,12 @@ table th + th, table td + td {border-left: 1px solid #eee;}
 
 /* Links */
 a, summary, .back {
-    color: #1d92cf;
+    /*color: #1d92cf;*/
     text-decoration: none;
     line-height: inherit;
     cursor: pointer;
+    color: #08c;
+    font-weight: bold;
 }
 a:hover, a:focus {
     color: #197eb2;
@@ -160,6 +177,9 @@ p {
     font-size: 18px; /* TEST */
     color: #333; /* TEST */
  }
+small {
+    font-size: 85%;
+}
 
 /* Pics & Icons etc. */
 img {
@@ -186,18 +206,12 @@ p img {
     font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 
     font-style: italic;
-    margin-left: 4rem;
-}
+    margin-left: 4rem}
 .page-intro:first-letter {
     color: #197eb2;
     font-size: 1.75rem;
 }
-.post .source {
-    color: #aaa;
-    font-style: italic;
-    border: 1px dotted #aaa;
-    padding: 15px;
-}
+
 /* for ex. Category name */
 .type-label {
     font-family: "Proxima Nova Condensed Bold","Proxima Nova Condensed","proxima-nova-condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -231,6 +245,9 @@ details summary:before {
 details[open] summary:before {
     content: " • ";
     /*content: " ¬ ";*/
+}
+details[open] summary span {
+    color: #197eb2;
 }
 
 /* Coliumns and grid */
@@ -504,10 +521,10 @@ article li {
     padding: 5px;
     font-style: italic;
 }
-blockquote {
-    margin: 30px 0;
+blockquote, q {
+    margin: 30px;
     padding: 0 15px;
-    border-left: 4px solid #00bce7;
+    border-left: 7px solid #00bce7;
     background: #f9f9f9;
 }
 blockquote p {
