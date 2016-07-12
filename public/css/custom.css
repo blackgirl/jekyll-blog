@@ -513,6 +513,8 @@ article li {
     font-size: 18px;
     line-height: 18px;
     padding-left: 0px;
+    list-style: none;
+    background: url("../icons/list-bullet.png") 14px 6px no-repeat;
     /*padding-bottom: 15px;*/
 }
 .post-head {
