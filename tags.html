@@ -9,6 +9,7 @@ main-class: tags
     <input type="text" id="search_box" name="query">
     <input type="submit" value="search">
 </form>
+
 <div class="tags">
 {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
