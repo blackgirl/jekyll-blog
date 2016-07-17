@@ -1,0 +1,13 @@
+.tags a {
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin: 4px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.tags a:hover {
+    box-shadow: none;
+    background: #CDDC39;
+    color: #fff;
+    /*font-weight: 600;*/
+}
