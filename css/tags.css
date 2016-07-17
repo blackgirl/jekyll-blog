@@ -1,14 +1,17 @@
 .container.tags {
+	background: #f5f5f5;
+}
+.container.tags .page {
 	width: 80%;
 	margin: 0 auto;
-	background: #f5f5f5;
 }
 .container.tags .post-list {
 	background: #fff;
+    padding: 30px 60px;
 }
 .container.tags .post-list .entry-date {
-	float:right;
-	color:#ddd;
+	float: right;
+	color: #ddd;
 }
 .tags a {
     padding: 2px 8px;
