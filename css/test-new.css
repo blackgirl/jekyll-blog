@@ -1,0 +1,74 @@
+body {
+    color: #000;
+    font-family: "Roboto",Arial Narrow,sans-serif;
+    font-weight: normal;
+}
+
+.cat_header {
+    font-family: "Roboto Slab",Georgia,serif;
+    font-weight: normal;
+    line-height: 42px;
+    color: #F30;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: -5px 0 25px 0;
+}
+.block_header a {
+    color: #000;
+    text-transform: none !important;
+}
+.section_header, .hN {
+    color: #f30;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    font-size: 24px;
+}
+.section_header {
+    border-bottom: 4px solid #000;
+}
+.article_header {
+    font-family: "Roboto",Arial Narrow,sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    line-height: 1.17;
+    margin: 0 0 15px;
+}
+.article p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+.meta_block .date {
+    margin: -1px 16px 5px 0 !important;
+    font-size: 14px;
+}
+img {
+    border: 0px;
+    font-style: italic;
+    max-width: 100%;
+}
+
+img[width], img[height] {
+    max-width: 100%;
+    height: auto;
+}
+a, blockquote, .small-link, .tabs__nav a.current, .tabs__nav a:hover {
+    color: rgb(251, 72, 52);
+}
+/* orange color #f30 */
+a {
+    color: #f30; 
+}
+a {
+    cursor: pointer;
+    color: rgb(255, 51, 0);
+    text-decoration: none;
+}
+.block_header {
+    font-family: "Roboto",Arial Narrow,sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: none;
+}
