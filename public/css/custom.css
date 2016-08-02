@@ -181,6 +181,10 @@ p {
 small {
     font-size: 85%;
 }
+.archive-time {
+    color: lightgray;
+    font-size: 14px;
+}
 
 /* Pics & Icons etc. */
 img {

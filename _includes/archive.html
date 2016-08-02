@@ -1,0 +1,3 @@
+{% for post in site.posts %}
+  <li><p><a href="{{ post.url }}"> {{ post.title }} </a> &raquo; <span class="archive-time">{{ post.date | date_to_string }}</span></p></li>
+{% endfor %}
