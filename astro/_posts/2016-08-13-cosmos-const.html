@@ -1,0 +1,289 @@
+---
+layout: post
+title: «Орбитальные эфемериды Солнца, Луны и планет» (Е.Майлс Стэндиш, Джеймс Г.Вильямс)
+categories:
+- Планеты
+tags: 
+- терминология
+- астрология
+- числа
+- планеты
+- полезное
+---
+<article><h1>Часть 8. Начальные условия и постоянные DE405/LE405</h1>
+<p>Начальные условия эфемериды DE405/LE405 были результатом двух последовательных улучшений по методу наименьших квадратов.</p>
+<p>Первое улучшение заключалось в решении для всех имеющих отношение к делу параметров, чьи значения были хорошо определены из эфемеридных данных. Затем числовые значения некоторых параметров были округлены (до незначительного уровня) ради наглядности и легкости использования. </p>
+<p>Эти округлённые значения были затем приняты как известные постоянные на втором этапе решения, который заключался в незначительном улучшении других параметров.</p>
+
+<p>В этом разделе представлены численные значения всех параметров, которые были использованы на заключительной стадии интегрирования при построении модели DE405/LE405.</p>
+<p>За начальную эпоху была выбрана юлианская эфемеридная дата <b>2440400.5 (июнь 28, 1969)</b> как последняя круглая дата перед началом регулярных сеансов лазерной локации Луны. </p>
+<p>Таблица 8.1 содержит прямоугольные гелиоцентрические координаты и скорости планет, положение и скорость Солнца относительно барицентра Солнечной системы и геоцентрические координаты и скорости Луны.</p>
+<p>Параметры ориентации осей фигуры Луны даны в таблице 8.2.<br>
+Динамические постоянные (те, что входят в уравнения движения) представлены в таблице 8.3, часть параметров, использованных для редукции наблюдательных данных (но не в уравнениях движения) показаны в таблице 8.4.<br>
+Таблица 8.5 содержит численные значения радиусов и таксономических классов 297 астероидов, использованных при построении модели DE405.</p>
+
+<p align="center"><b>Таблица 8.1.</b></p>
+<h2>Начальные условия на юлианскую эфемеридную дату (Teph) 2440400.5 (июнь 28, 1969).</h2>
+<p>Координаты в астрономических единицах и скорости в астрономических единицах за сутки даны в Международной небесной системе отсчёта ("ICRF"; экватор и равноденствие эпохи J2000.0): гелиоцентрические для планет, барицентрические для Солнца и геоцентрические для Луны.</p>
+<xmp>
+__________________________________________________________________________________
+Mercury   0.35726020644727541518  -0.09154904243051842990  -0.08598103998694037053
+0.00336784566219378527   0.02488934284224928990   0.01294407158679596663
+Venus     0.60824943318560406033  -0.34913244319590053792  -0.19554434578540693592
+0.01095242010990883868   0.01561250673986247038   0.00632887645174666542
+EM Bary   0.11601490913916648627  -0.92660555364038517604  -0.40180627760698804496
+0.01681162005220228976   0.00174313168798203152   0.00075597376713614610
+Mars     -0.11468858243909270380  -1.32836653083348816476  -0.60615518941938081574
+0.01448200480794474793   0.00023728549236071136  -0.00028374983610239698
+Jupiter  -5.38420940699214597622  -0.83124765616108382433  -0.22509475703354987777
+0.00109236329121849772  -0.00652329419119226767  -0.00282301226721943903
+Saturn    7.88988993382281817537   4.59571072692601301962   1.55843151672508969735
+-0.00321720349109366378   0.00433063223355569175   0.00192641746379945286
+Uranus  -18.26990081497826660524  -1.16271158021904696130  -0.25036954074255487461
+0.00022154016562741063  -0.00376765355824616179  -0.00165324380492239354
+Neptune -16.05954509192446441763 -23.94294829087950141524  -9.40042278035400838599
+0.00264312279157656145  -0.00150349208075879462  -0.00068127100487234772
+Pluto   -30.48782211215555045830  -0.87324543019672926542   8.91129698418475509659
+0.00032256219593323324  -0.00314874792755160542  -0.00108017793159369583
+Sun       0.00450250884530125842   0.00076707348146464055   0.00026605632781203556
+-0.00000035174423541454   0.00000517762777222281   0.00000222910220557907
+Moon     -0.00080817732791148419  -0.00199463000162039941  -0.00108726266083810178
+0.00060108481665912983  -0.00016744546061515148  -0.00008556214497398616
+__________________________________________________________________________________
+</xmp>
+
+<p align="center"><b>Таблица 8.2.</b></p>
+<h2>Угловые координаты физической либрации Луны, система "ICRF"; экватор и равноденствие эпохи J2000.0.</h2>
+<hr>
+<p align="center">Углы Эйлера &nbsp; <img align="bottom" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor801.gif"> &nbsp; (радианы).</p>
+<xmp>
+0.00512995970515812456   0.38239065587686011507   1.29414222411027863099
+</xmp>
+<p align="center">Угловые скорости &nbsp; <img align="bottom" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor802.gif"> &nbsp; (радианы за сутки).</p>
+<xmp>
+0.00004524704499022800  -0.00000223092763198743   0.22994485870136698411
+__________________________________________________________________________
+</xmp>
+
+<p align="center"><b>Таблица 8.3.</b></p>
+<h2>Динамические постоянные, использованные при интегрировании модели DE405/LE405.</h2>
+<hr>
+<p>Определяющие постоянные. Масштабный множитель.</p>
+<xmp>
+k       0.01720209895     гравитационная постоянная Гаусса      
+c     299792.458  [км/с]  скорость света
+AU   149597870.69 [км]    масштабный множитель  
+</xmp>
+
+<h2>Массы планет. Масса Солнца MS равна единице.</h2>
+<xmp>
+GMS/GM1     6023600.0      1/масса для Меркурия
+GMS/GM2      408523.71     1/масса для Венеры
+GMS/GMB      328900.5614   1/масса для системы Земля-Луна
+GMS/GM4     3098708.0      1/масса для Марса
+GMS/GM5        1047.3486   1/масса для Юпитера
+GMS/GM6        3497.898    1/масса для Сатурна
+GMS/GM7       22902.98     1/масса для Урана
+GMS/GM8       19412.24     1/масса для Нептуна
+GMS/GM9   135200000.0      1/масса для Плутона
+GME/GMM          81.30056  отношение масс Земля-Луна
+</xmp>
+
+<h2>Массы астероидов в долях массы Солнца и значения оценок средних плотностей малых планет трёх таксономических классов.</h2>
+<xmp>
+Gm(Ceres)      4.7e-10 GMS   масса Цереры
+Gm(Pallas)     1.0e-10 GMS   масса Паллады
+Gm(Vesta)      1.3e-10 GMS   масса Весты
+
+астероиды C-класса   1.8   грамм массы на кубический сантиметр
+астероиды S-класса   2.4   грамм массы на кубический сантиметр
+астероиды M-класса   5.0   грамм массы на кубический сантиметр
+</xmp>
+<p><b>Релятивистские параметры</b>
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor803.gif">= &nbsp; 1.0 &nbsp; ,
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor804.gif">= &nbsp; 1.0 &nbsp; .
+<br>
+<b>Скорость изменения гравитационной постоянной</b>
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor805.gif">= &nbsp; 0.0 &nbsp; .
+<br>
+<b>Динамический фактор сжатия Солнца</b>
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor806.gif">= &nbsp; 2.0e-7 &nbsp; .</p>
+
+<h2>Параметры Земли.</h2>
+<table border="0" align="center"><tbody><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor807.gif"></td><td width="200" align="center">6378.137 [км] </td><td width="400" align="center">радиус Земли </td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor808.gif"></td><td width="200" align="center">0.001082636 
+</td><td width="400" align="center">коэффициент при второй зональной гармонике</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor809.gif"></td><td width="200" align="center">-0.000002533
+</td><td width="400" align="center">коэффициент при третьей зональной гармонике</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor810.gif"></td><td width="200" align="center">-0.000001616
+</td><td width="400" align="center">коэффициент при четвёртой зональной гармонике</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor811.gif"></td><td width="200" align="center">0.34
+</td><td width="400" align="center">число Лява для потенциала прилива упругой Земли</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor812.gif"></td><td width="200" align="center">0.30
+</td><td width="400" align="center">число Лява для потенциала приливной деформации Земли</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor813.gif"></td><td width="200" align="center">0.30
+</td><td width="400" align="center">число Лява для потенциала вращательной деформации Земли</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor814.gif"></td><td width="200" align="center">0.0
+</td><td width="400" align="center">запаздывание по времени прилива упругой Земли</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor815.gif"></td><td width="200" align="center">0.01290895939 [сутки]</td><td width="400" align="center">запаздывание по времени приливной деформации Земли</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor816.gif"></td><td width="200" align="center">0.00694178558 [сутки]</td><td width="400" align="center">запаздывание по времени вращательной деформации Земли</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor817.gif"></td><td width="200" align="center">0.006358 ["]
+</td><td width="400" align="center">смещение оси X на эпоху J2000.0</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor818.gif"></td><td width="200" align="center">-0.015571 ["]
+</td><td width="400" align="center">смещение оси Y на эпоху J2000.0</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor819.gif"></td><td width="200" align="center">0.000244 ["/год]
+</td><td width="400" align="center">отрицательная поправка в наклоне: &nbsp; <img align="bottom" border="0" src="http://vadimchazov.narodru/text_htm/imfor821.gif"></td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor820.gif"></td><td width="200" align="center">-0.001193 ["/год]</td><td width="400" align="center">поправка прецессии: &nbsp; <img align="bottom" border="0" src="http://vadimchazov.narodru/text_htm/imfor822.gif"></td></tr></tbody></table>
+
+<h2>Параметры Луны.</h2>
+<table border="0" align="center"><tbody><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor823.gif"></td><td width="200" align="center">1738.0 [км] </td><td width="400" align="center">радиус Луны</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor824.gif"></td><td width="200" align="center">0.0006316121 
+</td><td width="400" align="center">характеристика моментов инерции Луны</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor825.gif"></td><td width="200" align="center">0.0002278583 
+</td><td width="400" align="center">характеристика моментов инерции Луны</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor826.gif"></td><td width="200" align="center">0.0299221167
+</td><td width="400" align="center">число Лява для потенциала Луны</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor827.gif"></td><td width="200" align="center">0.1667165558 [сутки] </td><td width="400" align="center">запаздывание по времени прилива твердотельной Луны</td></tr></tbody></table> 
+
+<h2>Коэффициенты разложения гравитационного поля Луны.</h2>
+<xmp>
+коэффициенты зональных гармоник:
+порядок         J2m              J3m              J4m
+значение   0.000204312007   0.000008785470  -0.000000145383
+коэффициенты тессеральных и секториальных гармоник:
+C(3,1)m = 0.000030803810 , S(3,1)m = 0.000004259329
+C(3,2)m = 0.000004879807 , S(3,2)m = 0.000001695516
+C(3,3)m = 0.000001770176 , S(3,3)m =-0.000000270970
+C(4,1)m =-0.000007177801 , S(4,1)m = 0.000002947434
+C(4,2)m =-0.000001439518 , S(4,2)m =-0.000002884372
+C(4,3)m =-0.000000085479 , S(4,3)m =-0.000000788967
+C(4,4)m =-0.000000154904 , S(4,4)m = 0.000000056404
+</xmp>
+<p>Заметим что, как сказано в разделе 3, применяемые в программе числовые значения коэффициентов &nbsp; J2 , C(2,1) , S(2,1) , C(2,2) &nbsp; и &nbsp; S(2,2)&nbsp; вычислялись на основе переменного во времени тензора моментов инерции Луны.</p>
+<p>Значение &nbsp; J2 ,&nbsp; приводимое в таблице, является входным значением; числовое значение коэффициента с учётом упругости, используемое в уравнениях сил и моментов, получается из этого входного значения и из числа Лява
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor826.gif">.</p>
+<p>Числовое значение коэффициента C(2,2) вычисляется на основе численных значений &nbsp; J2 ,
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor824.gif">
+и
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor825.gif">.</p>
+
+<p align="center"><b>Таблица 8.4.</b></p>
+<h2>Дополнительные постоянные, использованные в модели DE405/LE405 для редукции наблюдений.</h2>
+<hr>
+
+<h2>Параметры ориентации оси вращения Марса.</h2>
+<table border="0" align="center"><tbody><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor828.gif"></td><td width="200" align="center">23.4392811 [градусы] </td><td width="400" align="center">средний наклон эклиптики к экватору</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor829.gif"></td><td width="200" align="center">0.0 [градусы за сутки] </td><td width="400" align="center">скорость изменения среднего наклона эклиптики к экватору</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor830.gif"></td><td width="200" align="center">49.6167 [градусы] </td><td width="400" align="center">восходящий узел средней орбиты Марса на эклиптике</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor831.gif"></td><td width="200" align="center">0.0 [градусы за сутки] </td><td width="400" align="center">скорость изменения восходящего узла средней орбиты Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor832.gif"></td><td width="200" align="center">1.85137 [градусы] </td><td width="400" align="center">угол наклонения средней орбиты Марса к эклиптике</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor833.gif"></td><td width="200" align="center">0.0 [градусы за сутки] </td><td width="400" align="center">скорость изменения угла наклонения средней орбиты Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor834.gif"></td><td width="200" align="center">35.4371 [градусы] </td><td width="400" align="center">восходящий узел экватора Марса на средней орбите Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor835.gif"></td><td width="200" align="center">-5.76e-6 [градусы за сутки] </td><td width="400" align="center">скорость изменения восходящего узла экватора Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor836.gif"></td><td width="200" align="center">25.1886 [градусы] </td><td width="400" align="center">угол наклона экватора Марса к средней орбите Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor837.gif"></td><td width="200" align="center">-0.1094e-6 [градусы за сутки] </td><td width="400" align="center">скорость изменения угла наклона экватора Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor838.gif"></td><td width="200" align="center">1.3361259 [градусы] </td><td width="400" align="center">долгота первого меридиана Марса</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor839.gif"></td><td width="200" align="center">350.89198512444 [градусы за сутки] </td><td width="400" align="center">скорость изменения долготы (угловая скорость вращения Марса)</td></tr></tbody></table>
+
+<h2>Координаты на поверхности Марса спускаемых аппаратов Викинг.</h2>
+<table border="0" align="center"><tbody><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor840.gif"></td><td width="200" align="center">311.82160 [градусы] </td><td width="400" align="center">угол долготы аппарата Викинг Лэндер №1</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor841.gif"></td><td width="200" align="center">3136.520 [км] </td><td width="400" align="center">аксиальное расстояние (от оси вращения Z, Лэндер №1)</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor842.gif"></td><td width="200" align="center">1284.469 [км] </td><td width="400" align="center">числовое значение координаты Z (Лэндер №1)</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor843.gif"></td><td width="200" align="center">134.05322 [градусы] </td><td width="400" align="center">угол долготы аппарата Викинг Лэндер №2</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor844.gif"></td><td width="200" align="center">2277.366 [км] </td><td width="400" align="center">аксиальное расстояние (от оси вращения Z, Лэндер №2)</td></tr><tr><td width="50" align="center"><img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor845.gif"></td><td width="200" align="center">2500.054 [км] </td><td width="400" align="center">числовое значение координаты Z (Лэндер №2)</td></tr></tbody></table>
+
+<h2>Параметры Солнечной короны (см. формулу (24)).</h2>
+<p><i>A</i> = 1.06e8 &nbsp; 
+[1/(кубический сантиметр)] <br>
+<i>a</i> = 4.89e5 &nbsp;
+[1/(кубический сантиметр)] <br>
+<i>b</i> = 3.91e5 &nbsp;
+[1/(кубический сантиметр)]</p>
+<hr>
+
+<h1>Часть 8.1. Астероиды</h1>
+<p>Начальные условия для всех 300 малых планет взяты из файла, поддерживаемого группой динамики Солнечной системы Лаборатории реактивного движения. </p>
+<p>Радиусы малых планет из этого же набора данных были использованы для вычисления масс каждого из 297 астероидов (из общего списка исключили 3 самых больших по массе малых планеты) по формуле</p>
+<img align="top" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor846.gif"> где <br>
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor847.gif"> &nbsp;- радиус астероида в километрах, <br>
+<img align="middle" border="0" src="http://vadimchazov.narod.ru/text_htm/imfor848.gif"> &nbsp;- плотность соответствующего таксономического класса (S, C или M):
+<xmp>
+астероиды C-класса   1.8   грамм массы на кубический сантиметр
+астероиды S-класса   2.4   грамм массы на кубический сантиметр
+астероиды M-класса   5.0   грамм массы на кубический сантиметр
+</xmp>
+<p>Список малых тел, оценки численных значений их радиусов в километрах и таксономические классы даны в таблице 8.5.</p>
+
+<p align="center"><b>Таблица 8.5.</b></p>
+<h2>Список астероидов, использованных в модели DE405/LE405.</h2>
+<p>Приводятся порядковые номера, принятые наименования, таксономические классы (C, S или M) и оценки радиусов малых тел в километрах.</p>
+<xmp>______________________________________________________________________________
+0010 Hygiea      C 214.5   0109 Felicitas   C  45.8   0238 Hypatia     C  78.0
+0013 Egeria      C 107.5   0111 Ate         C  69.5   0240 Vanadis     C  54.0
+0019 Fortuna     C 100.0   0112 Iphigenia   C  37.8   0241 Germania    C  84.5
+0024 Themis      C  99.0   0114 Kassandra   C  51.5   0247 Eukrate     C  68.5
+0031 Euphrosyne  C 124.0   0117 Lomia       C  77.0   0259 Aletheia    C  92.5
+0034 Circe       C  59.0   0120 Lachesis    C  89.0   0266 Aline       C  56.5
+0035 Leukothea   C  54.0   0121 Hermione    C 108.5   0268 Adorea      C  71.0
+0036 Atalante    C  54.5   0127 Johanna     C  61.0   0275 Sapientia   C  57.5
+0038 Leda        C  60.0   0128 Nemesis     C  97.0   0276 Adelheid    C  63.5
+0041 Daphne      C  91.0   0130 Elektra     C  94.5   0283 Emma        C  75.0
+0045 Eugenia     C 107.0   0134 Sophrosyne  C  53.5   0303 Josephina   C  51.5
+0046 Hestia      C  65.5   0137 Meliboea    C  75.0   0304 Olga        C  34.2
+0047 Aglaja      C  68.5   0139 Juewa       C  81.0   0308 Polyxo      C  74.0
+0048 Doris       C 112.5   0140 Siwa        C  57.0   0313 Chaldaea    C  50.5
+0049 Pales       C  77.0   0141 Lumen       C  67.5   0324 Bamberga    C 114.0
+0050 Virginia    C  44.0   0143 Adria       C  46.4   0326 Tamara      C  50.0
+0051 Nemausa     C  76.5   0144 Vibilia     C  73.0   0329 Svea        C  40.2
+0052 Europa      C 156.0   0145 Adeona      C  77.5   0334 Chicago     C  85.0
+0053 Kalypso     C  59.5   0146 Lucina      C  68.5   0335 Roberta     C  46.8
+0054 Alexandra   C  85.5   0147 Protogeneia C  68.5   0336 Lacadiera   C  36.0
+0056 Melete      C  58.5   0150 Nuwa        C  78.5   0344 Desiderata  C  69.0
+0058 Concordia   C  48.9   0154 Bertha      C  96.0   0345 Tercidina   C  50.0
+0059 Elpis       C  86.5   0156 Xanthippe   C  63.0   0350 Ornamenta   C  61.5
+0062 Erato       C  49.6   0159 Aemilia     C  65.5   0356 Liguria     C  67.5
+0065 Cybele      C 120.0   0160 Una         C  42.5   0357 Ninina      C  55.0
+0070 Panopaea    C  63.5   0162 Laurentia   C  52.5   0358 Apollonia   C  45.9
+0072 Feronia     C  44.6   0163 Erigone     C  38.2   0360 Carlova     C  60.5
+0074 Galatea     C  61.5   0164 Eva         C  55.0   0362 Havnia      C  49.0
+0076 Freia       C  95.0   0165 Loreley     C  80.0   0363 Padua       C  48.5
+0078 Diana       C  62.5   0168 Sibylla     C  77.0   0365 Corduba     C  55.0
+0081 Terpsichore C  62.0   0171 Ophelia     C  60.5   0366 Vincentina  C  49.0
+0083 Beatrix     C  42.1   0173 Ino         C  79.5   0372 Palma       C  97.5
+0084 Klio        C  41.5   0175 Andromache  C  53.5   0373 Melusina    C  49.8
+0085 Io          C  78.5   0176 Iduna       C  62.5   0375 Ursula      C 108.0
+0086 Semele      C  63.5   0185 Eunike      C  82.5   0377 Campania    C  47.2
+0087 Sylvia      C 135.5   0187 Lamberta    C  67.5   0381 Myrrha      C  62.0
+0088 Thisbe      C 116.0   0191 Kolga       C  52.5   0386 Siegena     C  86.5
+0090 Antiope     C  62.5   0194 Prokne      C  87.0   0388 Charybdis   C  60.0
+0091 Aegina      C  57.0   0195 Eurykleia   C  44.9   0393 Lampetia    C  53.0
+0093 Minerva     C  85.5   0200 Dynamene    C  66.0   0404 Arsinoe     C  50.5
+0094 Aurora      C 106.0   0203 Pompeja     C  60.0   0405 Thia        C  64.5
+0095 Arethusa    C  72.5   0205 Martha      C  41.8   0407 Arachne     C  48.8
+0096 Aegle       C  87.0   0206 Hersilia    C  56.5   0409 Aspasia     C  84.0
+0098 Ianthe      C  54.5   0209 Dido        C  74.5   0410 Chloris     C  64.0
+0099 Dike        C  39.5   0210 Isabella    C  45.0   0412 Elisabetha  C  46.6
+0102 Miriam      C  43.0   0211 Isolda      C  74.0   0419 Aurelia     C  66.5
+0104 Klymene     C  63.5   0212 Medea       C  70.0   0420 Bertholda   C  73.0
+0105 Artemis     C  61.5   0213 Lilaea      C  42.3   0423 Diotima     C 108.5
+0106 Dione       C  73.5   0225 Henrietta   C  62.0   0424 Gratia      C  45.2
+0107 Camilla     C 118.5   0233 Asterope    C  54.0   0426 Hippo       C  67.0
+0431 Nephele     C  48.9   0751 Faina       C  57.5   0071 Niobe       S  43.6
+0442 Eichsfeldia C  33.8   0762 Pulcova     C  71.0   0080 Sappho      S  40.9
+0444 Gyptis      C  85.0   0769 Tatjana     C  51.0   0089 Julia       S  79.5
+0449 Hamburga    C  44.3   0772 Tanete      C  61.5   0103 Hera        S  47.6
+0451 Patientia   C 115.0   0773 Irmintraud  C  49.5   0115 Thyra       S  41.8
+0454 Mathesis    C  42.2   0776 Berbericia  C  88.5   0124 Alkeste     S  39.8
+0455 Bruchsalia  C  43.8   0780 Armenia     C  48.5   0148 Gallia      S  52.0
+0466 Tisiphone   C  60.5   0788 Hohensteina C  54.5   0181 Eucharis    S  53.5
+0469 Argentina   C  64.5   0790 Pretoria    C  88.0   0192 Nausikaa    S  53.5
+0476 Hedwig      C  60.5   0791 Ani         C  53.5   0196 Philomela   S  73.0
+0481 Emita       C  58.0   0804 Hispania    C  80.5   0221 Eos         S  55.0
+0488 Kreusa      C  79.0   0814 Tauris      C  58.0   0230 Athamantis  S  57.5
+0489 Comacina    C  72.0   0895 Helio       C  73.5   0236 Honoria     S  45.2
+0490 Veritas     C  60.5   0909 Ulla        C  60.0   0287 Nephthys    S  35.0
+0491 Carina      C  50.5   0914 Palisana    C  39.5   0328 Gudrun      S  23.5
+0498 Tokio       C  42.4   1015 Christa     C  50.5   0346 Hermentaria S  55.0
+0505 Cava        C  57.5   1021 Flammario   C  51.5   0349 Dembowska   S  71.5
+0506 Marion      C  54.5   1093 Freda       C  60.0   0354 Eleonora    S  81.0
+0508 Princetonia C  73.5   1467 Mashona     C  56.0   0385 Ilmatar     S  47.0
+0511 Davida      C 168.5   0003 Juno        S 133.5   0387 Aquitania   S  53.0
+0514 Armida      C  55.0   0005 Astraea     S  62.5   0389 Industria   S  40.8
+0521 Brixia      C  60.5   0006 Hebe        S  96.0   0416 Vaticana    S  44.8
+0535 Montague    C  38.5   0007 Iris        S 101.5   0433 Eros        S  10.0
+0536 Merapi      C  79.0   0008 Flora       S  70.5   0471 Papagena    S  67.5
+0545 Messalina   C  57.5   0009 Metis       S  85.0   0532 Herculina   S 112.5
+0554 Peraga      C  49.2   0011 Parthenope  S  81.0   0674 Rachele     S  50.5
+0566 StereoskopiaC  87.5   0012 Victoria    S  58.5   0980 Anacostia   S  44.5
+0568 Cheruskia   C  44.9   0014 Irene       S  83.5   1036 Ganymed     S  20.5
+0595 Polyxena    C  57.0   0015 Eunomia     S 136.0   0016 Psyche      M 132.0
+0596 Scheila     C  58.5   0017 Thetis      S  46.6   0021 Lutetia     M  49.8
+0602 Marianna    C  65.0   0018 Melpomene   S  74.0   0022 Kalliope    M  93.5
+0618 Elfriede    C  62.0   0020 Massalia    S  75.5   0069 Hesperia    M  71.5
+0626 Notburga    C  52.0   0023 Thalia      S  55.5   0075 Eurydike    M  29.1
+0635 Vundtia     C  50.0   0025 Phocaea     S  39.1   0077 Frigga      M  35.5
+0654 Zelinda     C  66.0   0026 Proserpina  S  49.4   0092 Undina      M  66.0
+0663 Gerlinde    C  52.0   0027 Euterpe     S  65.5   0097 Klotho      M  43.5
+0683 Lanzia      C  58.0   0028 Bellona     S  63.0   0110 Lydia       M  44.5
+0690 Wratislavia C  72.5   0029 Amphitrite  S 109.5   0129 Antigone    M  62.5
+0691 Lehigh      C  46.3   0030 Urania      S  52.0   0135 Hertha      M  41.0
+0694 Ekard       C  46.4   0032 Pomona      S  41.3   0201 Penelope    M  35.2
+0702 Alauda      C 101.0   0037 Fides       S  56.0   0216 Kleopatra   M  70.0
+0704 Interamnia  C 166.5   0039 Laetitia    S  79.5   0224 Oceana      M  35.0
+0705 Erminia     C  69.5   0040 Harmonia    S  55.5   0250 Bettina     M  42.8
+0709 Fringilla   C  49.8   0042 Isis        S  53.5   0322 Phaeo       M  36.9
+0712 Boliviana   C  66.0   0043 Ariadne     S  32.6   0337 Devosa      M  31.6
+0713 Luscinia    C  54.5   0044 Nysa        S  36.6   0338 Budrosa     M  31.1
+0739 Mandeville  C  55.0   0057 Mnemosyne   S  58.0   0347 Pariana     M  27.1
+0740 Cantabia    C  47.2   0063 Ausonia     S  54.0   0369 Aeria       M  31.1
+0747 Winchester  C  89.0   0068 Leto        S  63.5   0849 Ara         M  49.0
+______________________________________________________________________________
+</xmp></article>

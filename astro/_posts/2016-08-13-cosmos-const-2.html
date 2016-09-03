@@ -1,0 +1,242 @@
+---
+layout: post
+title: «Орбитальные эфемериды Солнца, Луны и планет», ч.10 (Е.Майлс Стэндиш, Джеймс Г.Вильямс)
+categories:
+- Планеты
+tags: 
+- терминология
+- астрология
+- числа
+- планеты
+- полезное
+---
+<article><h1>Часть 10. Кеплеровские элементы орбит для приближённых вычислений положений больших планет</h1>
+<p>Формулы для вычисления положений планет, обладающие низкой точностью, имеют ряд важных приложений в тех случаях, когда не требуется высокая точность эфемерид. Их часто используют как при составлении расписания наблюдений, наведении телескопа и предсказании некоторых явлений, так и при планировании и проектировании космических миссий.</p>
+
+<p>Приблизительные положения девяти больших планет могут быть найдены на основе формул кеплеровской орбиты и начальных числовых значений элементов орбиты и скоростей их изменения. Приводимые в таблицах параметры нельзя называть <b>"средними значениями"</b> в том смысле, как это принято в небесной механике.</p>
+<p>Числовые значения элементов орбит и скоростей изменения элементов
+получены в результате сравнения с мгновенными значениями гелиоцентрических координат планет под одним условием: при использовании этих параметров в формулах кеплеровского движения среднее квадратическое отклонение должно
+быть минимальным на заранее заданном промежутке времени. </p>
+<p>Как следствие, следует отметить, что наборы элементов становятся неверными за пределами интервала времени, на котором они получены.</p>
+<p>(Разумеется, что параметры, приводимые в таблицах, <b>не имеют никакого физического смысла</b> и не могут служить причиной каких-либо теоретических выводов. Применение их ограничено списком практических задач, упомянутых в начале раздела.)</p>
+<p>Повторюсь ещё раз, ибо это важно. Числовые значения элементов, приводимые в таблице 10.2 или в таблицах 10.3 и 10.4, <b>зависят от интервала времени</b>, на котором они получены и внутри которого их можно использовать.</p>
+<p>В следующем подразделе даны формулы для использования этих элементов.</p>
+
+<h1>Часть 10.1. Формулы для использования кеплеровских элементов</h1>
+<p>Ниже в таблицах приводятся числовые значения следующих кеплеровских элементов:</p>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE"><td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1001.gif">&nbsp;</td><td width="100%">: большая полуось  (астрономическая единица, астрономическая единица в столетие),</td></tr><tr valign="MIDDLE"><td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1002.gif">&nbsp;</td><td width="100%">: эксцентриситет,</td></tr><tr valign="MIDDLE"><td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1003.gif">&nbsp;</td><td width="100%">: угол наклонения (градусы, градусы за столетие),</td></tr><tr valign="MIDLE"><td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1004.gif">&nbsp;</td><td width="100%">: средняя долгота (градусы, градусы за столетие),</td></tr>
+<tr valign="MIDLE"><td align="CENTER"><img align="MIDDLE"border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1005.gif">&nbsp;</td><td width="100%">: долгота перигелия (градусы, градусы за столетие),
+<img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1015.gif">&nbsp;,</td></tr>
+<tr valign="MIDDLE"><td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1006.gif">&nbsp;</td><td width="100%">: долгота восходящего узла (градусы, градусы за столетие),</td></tr></tbody></table>
+<p>Для того, чтобы определить координаты одной из планет на заданную юлианскую эфемеридную дату <img align="center" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1007.gif">, надо выполнить следующие действия:</p>
+<ol><lb> Вычислить значение каждого из шести элементов этой планеты, например,<center><img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1008.gif"> &nbsp; ,</center>
+где <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1009.gif"> - момент времени в юлианских столетиях от эпохи <b>J2000</b>:
+<center><img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1010.gif">&nbsp; .</center></lb><lb> Вычислить значение аргумента перигелия <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1011.gif"> и значение средней аномалии <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1012.gif">&nbsp; :<br>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1013.gif">&nbsp; ,<br><img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1014.gif">&nbsp; ,</td>
+<td width="1%" align="RIGHT">(30)</td></tr></tbody></table>
+где три последних слагаемых следует добавить к значению элемента <img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1012.gif"> для внешних планет от Юпитера до Плутона при использовании формул на интервале времени от -3000 до +3000 лет.</lb><lb> Привести значение средней аномалии к промежутку<center><img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1016.gif"></center><br>
+и затем получить числовое значение эксцентрической аномалии <img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1017.gif"> путём решения уравнения Кеплера:<br>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1018.gif">&nbsp; ,</td><td width="1%" align="RIGHT">(31)</td></tr></tbody></table><br>
+где <center><img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1019.gif">&nbsp; .</center></lb><lb> Вычислить вектор гелиоцентрических координат планеты <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1020.gif">, расположенный в её орбитальной плоскости, с осью <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1021.gif">&nbsp;, направленной из фокуса эллипса в точку перигелия:<br>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1022.gif">&nbsp; <img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1023.gif">&nbsp; ,<br>
+<img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1024.gif">&nbsp; .</td>
+<td width="1%" align="RIGHT">(32)</td></tr></tbody></table>
+</lb><lb> Вычислить вектор <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1025.gif">, лежащий в плоскости эклиптики, фиксированной на стандартную эпоху <b>J2000</b>, с осью абсцисс, направленной в точку равноденствия:<br>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1026.gif">&nbsp; ,</td><td width="1%" align="RIGHT">(33)</td></tr></tbody></table>
+или, в координатном виде,
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1027.gif">&nbsp; ,</td><td width="1%" align="RIGHT">(34)</td></tr></tbody></table>
+</lb><lb> При желании можно получить компоненты вектора положения объекта в системе фиксированного экватора "ICRF":<br>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1028.gif">&nbsp; ,</td><td width="1%" align="RIGHT">(35)</td></tr></tbody></table>
+где угол наклонения эклиптики к экватору на эпоху <b>J2000</b> равен
+<center> <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1029.gif">&nbsp; . </center></lb></ol>
+
+<h1>Часть 10.2. Решение уравнения Кеплера</h1>
+<p>Зададим числовые значения средней аномалии <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1030.gif"> (в градусах) и эксцентриситета <img align="top" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1031.gif"> (в градусах), вычислим начальное значение эксцентрической аномалии</p>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1032.gif">&nbsp; ,</td><td width="1%" align="RIGHT">(36)</td></tr></tbody></table>
+<p>Mетодом итераций при
+<center><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1033.gif"></center>
+пока
+<center><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1034.gif"></center></p>
+<table cellpadding="0" width="100%" align="CENTER"><tbody><tr valign="MIDDLE">
+<td align="CENTER"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1036.gif">&nbsp; <img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1037.gif">&nbsp; ,<br>
+<img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1038.gif">&nbsp; ,</td>
+<td width="1%" align="RIGHT">(37)</td></tr></tbody></table>
+<h2>Hайдём искомое значение эксцентрической аномалии. </h2>
+<p>Для приближённых вычислений в данном контексте численного значения
+<img align="bottom" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1039.gif"> вполне достаточно.</p>
+<p>&nbsp;(Отметим, что величина <img align="bottom" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1031.gif"> задана в градусах, а величина <img align="bottom" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1035.gif"> - то же самое значение  эксцентриситета в радианах.)</p>
+<h1>Часть 10.3. Значения кеплеровских параметров орбит для вычислений с низкой точностью</h1>
+<p>В таблице 8.1 даны оценки точностей, которые можно ожидать при использовании приближённого подхода, излагаемого в этом разделе.</p>
+
+<p align="center"><b>Таблица 10.1</b></p>
+<h2>Максимальные ошибки в гелиоцентрической долготе λ, гелиоцентрической широте φ и гелиоцентрическом расстоянии планеты ρ, возникающие в результате применения приближённых формул данного раздела.</h2>
+
+<h2>Интервал с 1800 года по 2050 год.</h2>
+<table border="0" align="center"><tbody><tr><td width="150" align="center">планета</td><td width="100" align="center"><b>λ</b> ["] </td><td width="100" align="center"><b>φ</b> ["]</td><td width="100" align="center"><b>ρ</b> [1000 км] </td></tr><tr><td width="150" align="center">Меркурий</td><td width="100" align="center">15</td><td width="100" align="center">1</td><td width="100" align="center">1</td></tr>
+<tr><td width="150" align="center">Венера</td><td width="100" align="center">20</td><td width="100" align="center">1</td><td width="100" align="center">4</td></tr><tr><td width="150" align="center">Земля+Луна</td><td width="100" align="center">20</td><td width="100" align="center">8</td><td width="100" align="center">6</td></tr><tr><td width="150" align="center">Марс</td><td width="100" align="center">40</td><td width="100" align="center">2</td><td width="100" align="center">25</td></tr>
+<tr><td width="150" align="center">Юпитер</td><td width="100" align="center">400</td><td width="100" align="center">10</td><td width="100" align="center">600</td></tr><tr><td width="150" align="center">Сатурн</td><td width="100" align="center">600</td><td width="100" align="center">25</td><td width="100" align="center">1500</td></tr><tr><td width="150" align="center">Уран</td><td width="100" align="center">50</td><td width="100" align="center">2</td><td width="100" align="center">1000</td></tr><tr><td width="150" align="center">Нептун</td><td width="100" align="center">10</td><td width="100" align="center">1</td><td width="100" align="center">200</td></tr><tr><td width="150" align="center">Плутон</td><td width="100" align="center">5</td><td width="100" align="center">2</td><td width="100" align="center">300</td></tr></tbody></table>
+
+<h2>Интервал с -3000 года по 3000 год.</h2>
+<table border="0" align="center"><tbody><tr><td width="150" align="center">планета</td><td width="100" align="center"><b>λ</b> ["] </td><td width="100" align="center"><b>φ</b> ["]</td><td width="100" align="center"><b>ρ</b> [1000 км] </td></tr><tr><td width="150" align="center">Меркурий</td><td width="100" align="center">20</td><td width="100" align="center">15</td><td width="100" align="center">1</td></tr><tr><td width="150" align="center">Венера</td><td width="100" align="center">40</td><td width="100" align="center">30</td><td width="100" align="center">8</td></tr><tr><td width="150" align="center">Земля+Луна</td><td width="100" align="center">40</td><td width="100" align="center">15</td><td width="100" align="center">15</td></tr><tr><td width="150" align="center">Марс</td><td width="100" align="center">100</td><td width="100" align="center">40</td><td width="100" align="center">30</td></tr><tr><td width="150" align="center">Юпитер</td><td width="100" align="center">600</td><td width="100" align="center">100</td><td width="100" align="center">1000</td></tr><tr><td width="150" align="center">Сатурн</td><td width="100" align="center">1000</td><td width="100" align="center">100</td><td width="100" align="center">4000</td></tr><tr><td width="150" align="center">Уран</td><td width="100" align="center">2000</td><td width="100" align="center">30</td><td width="100" align="center">8000</td></tr><tr><td width="150" align="center">Нептун</td><td width="100" align="center">400</td><td width="100" align="center">15</td><td width="100" align="center">4000</td></tr><tr><td width="150" align="center">Плутон</td><td width="100" align="center">400</td><td width="100" align="center">100</td><td width="100" align="center">2500</td></tr></tbody><table>
+<p align="center"><b>Таблица 10.2</b></p>
+<h2>Кеплеровские элементы и скорости их изменения в системе средних эклиптики и экватора на эпоху J2000, пригодные на интервале времени с 1800 года по 2050 год.</h2>
+<p>Цифрами в колонках таблицы обозначены:</p>
+<table border="0"><tbody><tr><td width="50" alin="center">1</td><td width="150" align="center"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1001.gif"></td><td width="350" align="enter">а.е, а.е. за столетие</td></tr><tr><td width="50" align="center">2</td><td width="150" align="center"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1002.gif"></td><td width="350" align="enter">радиан, радиан за столетие</td></tr><tr><td width="50" align="center">3</td><td width="150" align="center"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1003.gif"></td><td width="350" align="enter">градусы, градусы за столетие</td></tr><tr><td width="50" align="center">4</td><td width="150" align="center"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1004.gif"></td><td width="350" align="enter">градусы, градусы за столетие</td></tr><tr><td width="50" align="center">5</td><td width="150" align="center"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1005.gif"></td><td width="350" align="enter">градусы, градусы за столетие</td></tr><tr><td width="50" align="center">6</td><td width="150" align="center"><img align="MIDDLE" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1006.gif"></td><td width="350" align="enter">градусы, градусы за столетие</td></tr></tbody></table>
+<xmp>_______________________________________________________________________________________
+
+1     2     3   456
+Меркурий   0.38709927  0.20563593  7.00497902    252.25032350  77.45779628  48.33076593
+0.00000037  0.00001906 -0.00594749 149472.67411175   0.16047689  -0.12534081
+Венера     0.72333566  0.00677672  3.39467605    181.97909950 131.60246718  76.67984255
+0.00000390 -0.00004107 -0.00078890  58517.81538729   0.00268329  -0.27769418
+Земля+Луна 1.00000261  0.01671123 -0.00001531    100.46457166 102.93768193   0.0
+0.00000562 -0.00004392 -0.01294668  35999.37244981   0.32327364   0.0
+Марс 1.52371034  0.09339410  1.84969142     -4.55343205 -23.94362959  49.55953891
+0.00001847  0.00007882 -0.00813131  19140.30268499   0.44441088  -0.29257343
+Юпитер     5.20288700  0.04838624  1.30439695     34.39644051  14.72847983 100.47390909
+-0.00011607 -0.00013253 -0.00183714   3034.74612775   0.21252668   0.20469106
+Сатурн     9.53667594  0.05386179  2.48599187     49.95424423  92.59887831 113.66242448
+-0.00125060 -0.00050991  0.00193609   1222.49362201  -0.41897216  -0.28867794
+Уран19.18916464  0.04725744  0.77263783    313.23810451 170.95427630  74.01692503
+-0.00196176 -0.00004397 -0.00242939    428.48202785   0.40805281   0.04240589
+Нептун    30.06992276  0.00859048  1.77004347    -55.12002969  44.96476227 131.78422574 
+0.00026291  0.00005105  0.00035372    218.45945325  -0.32241464  -0.00508664
+Плутон    39.48211675  0.24882730 17.14001206    238.92903833 224.06891629 110.30393684
+-0.00031596  0.00005170  0.00004818    145.20780515  -0.04062942  -0.01183482
+_______________________________________________________________________________________
+</xmp>
+
+<p align="center"><b>Таблица 10.3</b></p>
+<h2>Кеплеровские элементы и скорости их изменения в системе средних эклиптики и экватора на эпоху J2000, пригодные на интервале времени с -3000 года по 3000 год. </h2>
+<p>Вычисление значений средней аномалии <img align="middle" border="0" src="http://lnfm1.sai.msu.ru/neb/images/imfu1012.gif"> внешних планет от Юпитера до Плутона необходимо выполнять по формуле (30), то есть с дополнительными слагаемыми. </p>
+<p>Числовые значения добавочных коэффициентов даны в таблице 10.4.</p>
+<xmp>
+_______________________________________________________________________________________
+
+1     2     3   456
+Меркурий   0.38709843  0.20563661  7.00559432    252.25166724  77.45771895  48.33961819
+0.00000000  0.00002123 -0.00590158 149472.67486623   0.15940013  -0.12214182
+Венера     0.72332102  0.00676399  3.39777545    181.97970850 131.76755713  76.67261496
+-0.00000026 -0.00005107  0.00043494  58517.81560260   0.05679648  -0.27274174
+Земля+Луна 1.00000018  0.01673163 -0.00054346    100.46691572 102.93005885  -5.11260389
+-0.00000003 -0.00003661 -0.01337178  35999.37306329   0.31795260  -0.24123856
+Марс 1.52371243  0.09336511  1.85181869     -4.56813164 -23.91744784  49.71320984
+0.00000097  0.00009149 -0.00724757  19140.29934243   0.45223625  -0.26852431
+Юпитер     5.20248019  0.04853590  1.29861416     34.33479152  14.27495244 100.29282654
+-0.00002864  0.00018026 -0.00322699   3034.90371757   0.18199196   0.13024619
+Сатурн     9.54149883  0.05550825  2.49424102     50.07571329  92.86136063 113.63998702
+-0.00003065 -0.00032044  0.00451969   1222.11494724   0.54179478  -0.25015002
+Уран19.18797948  0.04685740  0.77298127    314.20276625 172.43404441  73.96250215
+-0.00020455 -0.00001550 -0.00180155    428.49512595   0.09266985   0.05739699
+Нептун    30.06952752  0.00895439  1.77005520    304.22289287  46.68158724 131.78635853
+0.00006447  0.00000818  0.00022400    218.46515314   0.01009938  -0.00606302
+Плутон    39.48686035  0.24885238 17.14104260    238.96535011 224.09702598 110.30167986
+0.00449751  0.00006016  0.00000501    145.18042903  -0.00968827  -0.00809981
+_______________________________________________________________________________________
+</xmp>
+
+<p align="center"><b>Таблица 10.4</b></p>
+<h2>Дополнительные слагаемые.</h2>
+<p>Kоторые должны быть добавлены при вычислении средней аномалии внешних планет от Юпитера до Плутона на интервале времени от -3000 года до 3000 года (формула 30).</p>
+<xmp>
+_______________________________________________________________
+bc s  f
+Юпитер    -0.00012452   0.06064060   -0.35635438    38.35125000
+Сатурн     0.00025899  -0.13434469    0.87320147    38.35125000
+Уран 0.00058331  -0.97731848    0.17689245     7.67025000
+Нептун    -0.00041348   0.68346318   -0.10162547     7.67025000
+Плутон    -0.01262724
+_______________________________________________________________
+</xmp>
+
+<h2>Единицы измерения коэффициентов<h2>
+<p>&nbsp;&nbsp; b &nbsp; - &nbsp; градусы в столетие за столетие,<br>
+&nbsp;&nbsp; c &nbsp; - &nbsp; градусы,<br>
+&nbsp;&nbsp; s &nbsp; - &nbsp; градусы,<br>
+&nbsp;&nbsp; f &nbsp; - &nbsp; градусы за столетие.</p>
+<p class="sourse">Все графические изображения математических формул и знаков
+скопированы из оригинальной версии <a href="http://iau-comm4.jpl.nasa.gov/XSChap8.pdf" target="_blank" title="Лаборатория реактивного движения США, текст в PDF формате, 233282 bytes">Лаборатория реактивного движения США, статьи</a>.</p>
+<hr>
+<p class="sourse"><h2>Литература</h2>
+<p>URL#1 http://ssd.jpl.nasa.gov/plan-eph-data/index.html <br>
+URL#2 http://maia.usno.navy.mil/conv2000.html <br>
+URL#3 http://www.willbell.com/software/jpl.htm <br>
+URL#4 http://ssd.jpl.nasa.gov/eph.info.html <br>
+URL#5 http://ssd.jpl.nasa.gov/ <br>
+URL#6 http://ssd.jpl.nasa.gov/iau-comm4/access2ephs.html <br>
+Anderson,J.D., Jurgens,R.F., Lau,E.L., and Slade,M.A. (1996). "Shape and Orientation of Mercury from Radar Ranging Data", Icarus, 124, 690-697. <br>
+Berge,G.L., Muhleman,D.O., and Linfield,R.P. (1988). "Very Large Array Observations of Uranus at 2.0 Astron. J., 96, 388-395. <br>
+Border,J.S. (2002, 2003). private communications. <br>
+Brown, E.W. (1919). Tables of the Motion of the Moon (Yale University Press. New Haven, CT). <br>
+Chao,C.C. (1970). "A Preliminary Estimation of Tropospheric Influence on the Range and Range Rate Data During the Closest Approach of the MM71 Mars Mission", JPL Tech Memo 391-129. <br>
+Clemence,G.M. (1954). "Perturbations of the Five Outer Planets by the Four Inner Ones" in Astronomical Papers American Ephemeris, 13, part V, (U.S. Government Printing Office, Washington, DC). <br>
+Clemence,G.M., Porter,J.G., and Sadler,D.H. (1952). "Aberration in the Lunar Ephemeris" Astron. J. 57, 46-47. <br>
+Debarbat, S. and Guinot, B. (1970). "La Methode des Hauteurs Egales en Astronomie", Paris, Gordon & Breach. <br>
+Eckert,W., Brouwer,D., and Clemence,G.M. (1951). "Coordinates of the Five Outer Planets 1953-2060" in Astronomical Papers American Ephemeris, XII (U.S. Government Printing Office, Washington, DC). <br>
+Eckert,W.J., Walker,M.J., and Eckert,D.D. (1966). "Transformation of the Lunar Coordinates and Orbital Parameters" Astron. J. 71, 314-332. <br>
+Eckert,W.J., Van Flandern,T.C., and Wilkins,G.A. (1969). "A Note on the Evaluation of the Latitude of the Moon" Mon Not. R.A.S.,146, 473-478. <br>
+Eckhardt,D.H. (1981). "Theory of the libration of the Moon", Moon and the Planets, 25, 3-49. <br>
+Estabrook,F.B. (1971a). "Derivation of Relativistic Lagrangian for n-Body Equations containing Relativity Parameters" JPL IOM, Section 328, 14 June 1971. <br>
+Estabrook,F.B. (1971b). private communication. <br>
+"Explanatory Supplement to the Astronomical Almanac", P.K.Seidelmann, ed., University Science Books, Mill Valley, CA, 1992. <br>
+"Explanatory Supplement to the Astronomical Ephemeris and the American Ephemeris and Nautical Almanac", H. M. Stationery Office, London, 1961. <br>
+Folkner,W.M. (1993). private communication. <br>
+Folkner,W.M., Kroger,P.M., and Hildebrand,C.E. (1992a). "Preliminary results from VLBI measurement on September 12, 1990", JPL IOM 335.1-92-25 <br>
+Folkner,W.M., Kroger,P.M., and Iijima,B.A., and Hildebrand,C.E. (1992b). "VLBI measurement of Mars on 25 March 1989", JPL IOM 335.1-92-27. <br>
+Folkner,W.M., Kroger,P.M., and Iijima,B.A., and Hildebrand,C.E. (1992c). "VLBI measurement of Mars on 17 February 1989", JPL IOM 335.1-92-26. <br>
+Folkner,W.M., Kroger,P.M., and Iijima,B.A. (1993a). "Results from VLBI measurement of Venus on 29 March, 1992", JPL IOM 335.1-93-22 <br>
+Folkner, W.M., Charlot, P., Finger, M.H., Williams, J.G., Sovers, O.J., Newhall, X X, and Standish, E.M. (1993b), "Determination of the extragalactic frame tie from joint analysis of radio interferometric and lunar laser ranging measurements", Astron. Astrophys., 287, 279-289. <br>
+Folkner,W.M., Border,J.S., and Iijima,B.A. (1994a). "Results from VLBI measurement of Venus on April 1, 1994", JPL IOM 335.1-94-014 <br>
+Folkner,W.M., Kroger,P.M., Iijima,B.A., and Border,J.S. (1994b). "Results from VLBI measurements of Venus on December 22 and December 23, 1991", JPL IOM 335.1-94-006 <br>
+Folkner,W.F., Yoder,C.F., Yuan,D.N., Standish,E.M. and Preston,R.A. (1998). "Interior Structure andSeasonal Mass Redistribution of Mars from Radio Tracking of Mars Pathfinder", Science, 278, 1677-1848. <br>
+Fricke,W. and Kopff,A. (1963). "Fourth Fundamental Catalogue (FK4)", Veroffentlichungen #10, Astronomisches Rechen-Institut, Heidelberg. <br>
+Fricke,W. (1971). "A Rediscussion of Newcomb's Determination of Precession", Astron. Astrophys. 13, 298-308. <br>
+Fricke,W. (1982). "Determination of the Equinox and Equator of the FK5", Astron. Astrophys. 107, L13-L16. <br>
+Improver Lunar Ephemeris 1952-1959 (1954) U.S. Government Printing Office, Washington. <br>
+Konopliv,A.S. (2002, 2003). private communications. <br>
+Krogh, F.T. (1972). Lecture Notes in Mathematics, 362 (Springer-Verlag, New York) p. 22. <br>
+Lieske,J.H., Lederle,T., Fricke,W. and Morando,B. (1977), "Expressions for the Precession Quantities Based upon the IAU (1976) System of Astronomical Constants", Astron. Astrophys., 58, 1-16. <br>
+Lyttleton,R.A., Cain,D.L., and Liu,A.S. (1979). "Nutation of Mars", JPL Publication 79-85. <br>
+Ma, C., Arias, E.F., Eubanks, T.M., Fey, A.L., Gontier, A.-M., Jacobs, C.S., Sovers, O.J., Archinal, B.A., and Charlot, P. (1998). "The International Celestial Reference Frame as Realized by Very Long Baseline Interferometry", Astron. J., 116, 516-546. <br>
+Morrison, L.V. (1996). private communication. <br>
+Moyer,T.D. (1971). "Mathematical Formulation of the Double-Precision Orbit Determination Program (DPODP)", JPL Tech Rep 32-1527. <br>
+Moyer,T.D. (2000). "Formulation for Observed and Computed Values of Deep Space Network Data Types for Navigation", JPL Publication 00-7. Orbit Determination Program (DPODP)", JPL Tech Rep 32-1527. <br>
+Muhleman,D.O. and Anderson,J.D. (1981). "Solar Wind Electron Densities from Viking Dual-Frequency Radio Measurements", Astrophys. J., 247, 1093-1101. <br>
+Muhleman,D.O., Berge,G.L., Rudy,D.J., Niell,A.E., Linfield,R.P. and Standish,E.M. (1985). "Precise Position Measurements of Jupiter, Saturn and Uranus Systems with the Very Large Array", Cel. Mech., 37, 329-337. <br>
+Muhleman,D.O., Berge,G.L. and Rudy,D. (1986). "Precise VLA Positions and Flux-Density Measurements of the Jupiter System", Astron. J., 92, 1428-1435. <br>
+Muhleman,D.O., Berge,G.L. and Jones,D. (1988). "VLA Observations of Neptune and the Mass of Triton", informal report, CalTech. <br>
+Newcomb,S. (1898a). "Tables of the Motion of the Earth on its Axis and Around the Sun", in Astronomical Papers American Ephemeris VI, part I (U.S. Government Printing Office, Washington, DC). <br>
+Newcomb,S. (1898b). "Tables of the Heliocentric Motion of Mercury", in Astronomical Papers American Ephemeris VI, part II (U.S. Government Printing Office, Washington, DC). <br>
+Newcomb,S. (1898c). "Tables of the Heliocentric Motion of Venus", in Astronomical Papers American Ephemeris VI, part III (U.S. Government Printing Office, Washington, DC). <br>
+Newcomb,S. (1898d). "Tables of the Heliocentric Motion of Mars", in Astronomical Papers American Ephemeris VI, part IV (U.S. Government Printing Office, Washington, DC). <br>
+Newhall,XX, (1989). "Numerical Representation of Planetary Ephemerides", Cel Mech, 45, 305-310. <br>
+Newhall,X X, and Williams,J.G. (1997). "Estimation of the Lunar Physical Librations", Cel Mech and Dyn. Astron., 66, 21-30. <br>
+Newhall,X X, Standish,E.M. and Williams,J.G. (1983). "DE102: a numerically integrated ephemeris of the Moon and planets spanning forty-four centuries", Astron. Astrophys. 125, 150-167. <br>
+Nicholson,P.D. (1992). private communication. <br>
+Pettengill,G.H., Eliason,E., Ford,P.G., Loriot,G.B., Masursky,H., and McGill,G.E. (1980). "Pioneer Venus Radar Results: Altimetry and Surface Properties", J. Geophys. Res., 85, A13, 8261-8270. <br>
+Ross,F.E. (1917). "New Elements of Mars" in Astronomical Papers American Ephemeris IX, part II (U.S. Government Printing Office, Washington, DC). <br>
+Schwan,H. (1983). "A Method for the Determination of a System of Positions and Proper Motions of Stars with an Application to the Washington 6 Inch TC Observations", Veroffentlichungen #30, <br>
+Shapiro,I.I. (1964). "Fourth Test of General Relativity", Phys. Rev. Let., 13, 789. <br>
+Standish,E.M. (1982). "Orientation of the JPL Ephemerides, DE200/LE200, to the Dynamical Equinox of J2000", Astron. Astrophys. 114, 297-302. <br>
+Standish,E.M. (1990). "The observational basis for JPL's DE200, the planetary ephemerides of the Astronomical Almanac", Astron. Astrophys, 233, 252-271. <br>
+Standish,E.M., (1995). "Report of the IAU WGAS Sub-Group on Numerical Standards", in "Highlights of Astronomy" (Appenzeller, ed.), pp. 180-184, Kluwer Academic Publishers, Dordrecht. <br>
+Standish,E.M. (1998a). "JPL Planetary and Lunar Ephemerides, DE405/LE405",JPL IOM 312.F-98-048. <br>
+Standish,E.M. (1998b). "Time Scales in the JPL and CfA Ephemerides", Astron. Astrophys., 336, 381-384. <br>
+Standish,E.M. (2004). "An approximation to the errors in the planetary ephemerides of the Astronomical Almanac", Astron. Astrophys 417, 1165-1171. <br>
+Standish,E.M. and Williams,J.G. (1990). "Dynamical Reference Frames in the Planetary and Earth-Moon Systems", in "Inertial Coordinate System on the Sky" (J.H.Lieske and V.K.Abalakin, eds.) Kluwer Academic Publishers, Dordrecht, 173-181. <br>
+Standish,E.M., Debarbat,S. and Sanchez,M. (1981). "Astrolabe Observations of Mars", Astron. Astrophys 102, 371-374. <br>
+Stone,R.C. (1998). "CCD Positions for the Outer Planets in 1996-97 Determined in the Extragalactic Reference Frame", Astron. J., 116, 1461-69. <br>
+Stone,R.C. and Harris,F.H. (2000). "CCD Positions Determined in the International Celestial Reference Frame (ICRF) for the Outer Planets and Many of their Satellites in 1995-99", Astron. J., 119, 1985-98. <br>
+Will,C.M. (1974). Experimental Gravitation B.Bertotti, ed. (Academic Press, New York). <br>
+Williams,J.G. (1984). "Determining Asteroid Masses from Perturbations on Mars", Icarus 57, 1-13. <br>
+Williams,J.G. (1994). "Contributions to the Earth's obliquity rate, precession, and nutation", Astron. J., 108, 711-724. <br>
+Williams,J.G. and Standish,E.M. (1989). "Dynamical Reference Frames in the Planetary and Earth-Moon Systems", in "Reference Frames" (J.Kovalevsky, I.I.Mueller and B.Kolaczek, eds.) Kluwer Academic Publishers, Dordrecht. <br>
+Williams,J.G., Boggs,D.H., Yoder,C.F., Ratcliff,J.T., and Dickey,J.O. (2001). "Lunar rotational dissipation in solid body and molten core", JGeoRes, 106, #E11, 27933-27968. <br>
+Yoder,C.F. (1979). "Effects of the Spin-Spin Interaction and the Inelastic Tidal Deformation on the Lunar Physical Librations", in "Natural and Artificial Satellite Motion", (P.E.Nacozy and S. Ferraz-Mello, eds.), University of Texas Press, Austin.</p></article>
