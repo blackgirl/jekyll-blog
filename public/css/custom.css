@@ -75,9 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     /*font-size: 4.5em;*/
-    /*font-weight: 400;*/
     font-family: Verdana;
     font-weight: bold;
+    text-align: center;
     line-height: 28px;
     padding-left: 0;
     margin: 40px 0px 40px 0px; 
@@ -557,6 +557,7 @@ blockquote + span {
     line-height: 1;
     text-align: right;
     background: none;
+    font-size: 16px;
 }
 .quote {
     line-height: .75;
