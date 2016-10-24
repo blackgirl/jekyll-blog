@@ -4,11 +4,15 @@ title: "Флажочки"
 permalink: /tags/index.html
 main-class: tags
 ---
-<form action="/search.html" method="get">
+<!-- <form action="/search.html" method="get"> -->
     <label for="search_box">Search</label>
-    <input type="text" id="search_box" name="query">
-    <input type="submit" value="search">
-</form>
+    <input  class="filter-input" type="text" id="search_box" name="query">
+    <!-- <input type="submit" value="search"> -->
+<!-- </form> -->
+
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Флажбище&nbsp;&rarr;</a>
+
+<div class="collapse" id="collapseExample"><div class="well">
 
 <div class="tags">
 {% assign tags_list = site.tags %}
@@ -24,18 +28,49 @@ main-class: tags
 {% assign tags_list = nil %}
 </div>
 
+</div></div>
+
+<dl class="post-list">
 {% for tag in site.tags  %}
-    <h2 class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="post-list">
+    <!-- <h2 class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2> -->
+        <dt class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</dt>
+    <!-- <ul class="post-list"> -->
         {% assign pages_list = tag[1] %}
         {% for post in pages_list reversed %}
             {% if post.title != null %}
             {% if group == null or group == post.group %}
-            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+            <!-- <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li> -->
+            <dd><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></dd>
             {% endif %}
             {% endif %}
         {% endfor %}
         {% assign pages_list = nil %}
         {% assign group = nil %}
-    </ul>
+    <!-- </ul> -->
 {% endfor %}
+</dl>
+
+<script>
+$(function() {
+    $('.filter-input').keyup(function() {
+        // Get user input from search box
+        var filter_text = $(this).val();
+        // If user input is not null
+        if (filter_text && filter_text.length > 3) {
+            $('.post-list a').each(function() {
+                // If user input matches this item in the list, show this item
+                if ($(this).text().toLowerCase().indexOf(filter_text) >= 0) {
+                    $(this).parent().slideDown();
+                } else {
+                    // If user input doesn't match this item in the list, hide this item
+                    $(this).parent().slideUp();
+                }
+            })
+        } else {
+            // If user input is null
+            $('.post-list dd').slideDown();
+        }
+        $('dt').filter(function(){return !($(this).next().is('dd'))}).remove();
+    });
+});
+</script>

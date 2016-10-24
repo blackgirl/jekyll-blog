@@ -7,11 +7,27 @@
 }
 .container.tags .post-list {
 	background: #fff;
-    padding: 30px 60px;
+    /*padding: 30px 60px;*/
 }
 .container.tags .post-list .entry-date {
 	float: right;
 	color: #ddd;
+}
+.tag-title {
+	margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: lightblue;
+    padding: 0 15px;
+    color: #ffffff;
+}
+dt + dt {
+	color: green;
+}
+dt ˜ dt {
+	color: blue;
 }
 .tags a {
     padding: 2px 8px;
