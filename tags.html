@@ -4,17 +4,15 @@ title: "Флажочки"
 permalink: /tags/index.html
 main-class: tags
 ---
-<!-- <form action="/search.html" method="get"> -->
-    <label for="search_box">Search</label>
-    <input  class="filter-input" type="text" id="search_box" name="query">
-    <!-- <input type="submit" value="search"> -->
-<!-- </form> -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<label for="search">Search</label>
+<!-- <input  class="filter-input" type="text" id="search_box" name="query"> -->
+<form><input data-type="search" id="search"></form>
 
 <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Флажбище&nbsp;&rarr;</a>
-
-<div class="collapse" id="collapseExample"><div class="well">
-
-<div class="tags">
+<div class="collapse" id="collapseExample"><div class="well"><div class="tags">
 {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
@@ -26,51 +24,26 @@ main-class: tags
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
+</div></div></div>
+
+
+<div data-role="collapsibleset" data-filter="true" data-input="#search" data-children="> div, > div ul li a" data-inset="true" data-iconpos="right" data-mini="true" data-collapsed-icon="false">
+{% for tag in site.tags %}
+    <div data-role="collapsible" >
+        <h2 class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+        <ul class="post-list" data-role="listview"  data-inset="false">
+            {% assign pages_list = tag[1] %}
+            {% for post in pages_list reversed %}
+                {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                <li data-corners="false"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+        </ul>
+    </div>
+{% endfor %}
 </div>
 
-</div></div>
-
-<dl class="post-list">
-{% for tag in site.tags  %}
-    <!-- <h2 class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2> -->
-        <dt class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</dt>
-    <!-- <ul class="post-list"> -->
-        {% assign pages_list = tag[1] %}
-        {% for post in pages_list reversed %}
-            {% if post.title != null %}
-            {% if group == null or group == post.group %}
-            <!-- <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li> -->
-            <dd><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></dd>
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        {% assign pages_list = nil %}
-        {% assign group = nil %}
-    <!-- </ul> -->
-{% endfor %}
-</dl>
-
-<script>
-$(function() {
-    $('.filter-input').keyup(function() {
-        // Get user input from search box
-        var filter_text = $(this).val();
-        // If user input is not null
-        if (filter_text && filter_text.length > 3) {
-            $('.post-list a').each(function() {
-                // If user input matches this item in the list, show this item
-                if ($(this).text().toLowerCase().indexOf(filter_text) >= 0) {
-                    $(this).parent().slideDown();
-                } else {
-                    // If user input doesn't match this item in the list, hide this item
-                    $(this).parent().slideUp();
-                }
-            })
-        } else {
-            // If user input is null
-            $('.post-list dd').slideDown();
-        }
-        $('dt').filter(function(){return !($(this).next().is('dd'))}).remove();
-    });
-});
-</script>
