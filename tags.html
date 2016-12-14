@@ -13,7 +13,7 @@ main-class: tags
 
 <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Флажбище&nbsp;&rarr;</a>
 <div class="collapse" id="collapseExample"><div class="well"><div class="tags">
-{% assign tags_list = site.tags %}
+{% assign tags_list = site.tags | sort %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
         <a href="#{{ tag | slugify }}">{{ tag }}</a>
