@@ -3,7 +3,7 @@
   {% include head.html %}
   <body class="theme-base-00 layout-reverse sidebar-overlay" style="background-image:url('{%if page.bg%}{{page.bg}}{%endif%}');">
     {% include sidebar.html %}
-    <div class="wrap">
+    <div class="wrap" id="wrapper">
       <div class="container content {%if page.main-class%}{{page.main-class}}{%endif%}{% if page.path contains '_posts' %} post {%endif%} section cf">
         {{ content }}
       </div>

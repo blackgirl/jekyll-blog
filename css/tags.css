@@ -82,5 +82,13 @@ input[type="submit"] {
     text-align: center;
     white-space: nowrap;
     /* vertical-align: middle; */
-    /* background-color: #FFEE58; */
+     background-color: #FFEE58; 
+}
+.scroll-top {
+	position: fixed;
+	bottom: 15%;
+	right: 5%;
+	width: 30px;
+	height: 30px;
+	
 }

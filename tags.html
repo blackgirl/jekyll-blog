@@ -14,10 +14,10 @@ main-class: tags
 <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Флажбище&nbsp;&rarr;</a>
 <div class="collapse" id="collapseExample"><div class="well"><div class="tags">
 {% assign tags_list = site.tags | sort: tag[0] %}
+
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
     {% assign tag_size = site.tags[tag].size %}
-    <!-- {% assign tag_size = site.tags[tag]|size %} -->
         <a href="#{{ tag | slugify }}">{{ tag }}
             <sup class="badge">({{ tag_size }})</sup>
         </a>
@@ -51,3 +51,4 @@ main-class: tags
     </div>
 {% endfor %}
 </div>
+<a href="#wrapper" class="scroll-top">&uarr;</a>
