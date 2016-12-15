@@ -30,17 +30,17 @@ dt ˜ dt {
 	color: blue;
 }
 .tags a {
-    padding: 2px 8px;
-    border-radius: 10px;
-    margin: 4px;
+    padding: 0 2px;
+    margin: 4px 10px;
     font-weight: 400;
     line-height: 34px;
 }
 .tags a:hover {
     box-shadow: none;
-    background: #CDDC39;
-    color: #fff;
+    /*background: #CDDC39;*/
+    /*color: #fff;*/
     /*font-weight: 600;*/
+    border-bottom: 1px dotted #197eb2;
 }
 
 
@@ -75,4 +75,17 @@ input[type="submit"] {
 	width: 50%;
 	margin: 0 auto;
 	padding: 100px 0;
+}
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #FFEE58;
+    border-radius: 10px;
 }

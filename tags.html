@@ -4,28 +4,33 @@ title: "Флажочки"
 permalink: /tags/index.html
 main-class: tags
 ---
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
 <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 <label for="search">Search</label>
 <!-- <input  class="filter-input" type="text" id="search_box" name="query"> -->
 <form><input data-type="search" id="search"></form>
 
 <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Флажбище&nbsp;&rarr;</a>
 <div class="collapse" id="collapseExample"><div class="well"><div class="tags">
-{% assign tags_list = site.tags | sort %}
+{% assign tags_list = site.tags | sort: tag[0] %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-        <a href="#{{ tag | slugify }}">{{ tag }}</a>
+    {% assign tag_size = site.tags[tag].size %}
+    <!-- {% assign tag_size = site.tags[tag]|size %} -->
+        <a href="#{{ tag | slugify }}">{{ tag }}
+            <sup class="badge">({{ tag_size }})</sup>
+        </a>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-        <a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        <a href="#{{ tag[0] | slugify }}">{{ tag[0] }}
+            <sup class="badge">({{ tag[1].size }})</sup>
+        </a>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
 </div></div></div>
-
 
 <div data-role="collapsibleset" data-filter="true" data-input="#search" data-children="> div, > div ul li a" data-inset="true" data-iconpos="right" data-mini="true" data-collapsed-icon="false">
 {% for tag in site.tags %}
@@ -46,4 +51,3 @@ main-class: tags
     </div>
 {% endfor %}
 </div>
-
