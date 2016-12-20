@@ -18,9 +18,9 @@ main-class: tags
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
     {% assign tag_size = site.tags[tag].size %}
-        <a href="#{{ tag | slugify }}">{{ tag }}
+        <!-- <a href="#{{ tag | slugify }}">{{ tag }}
             <sup class="badge">({{ tag_size }})</sup>
-        </a>
+        </a> -->
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
