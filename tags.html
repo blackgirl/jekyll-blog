@@ -12,7 +12,7 @@ main-class: tags
 <form><input data-type="search" id="search"></form>
 
 <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">Флажбище&nbsp;&rarr;</a>
-<div class="collapse" id="collapseExample"><div class="well"><div class="tags">
+<div class="collapse in" id="collapseExample"><div class="well"><div class="tags">
 {% assign tags_list = site.tags | sort: tag[0] %}
 
   {% if tags_list.first[0] == null %}
