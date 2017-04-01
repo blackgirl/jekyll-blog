@@ -1,0 +1,14 @@
+---
+layout: page
+title: Слова
+---
+{% assign pages = site.pages %}
+{% for page in pages %}
+	{% if page.categories contains 'words' %}
+	    <li><p><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
+	    <a href="{{site.url}}{{ page.url }}">&nbsp;&nbsp;{{ page.title }}</a></p></li>
+	    <!-- <td><span class="category hide"><i class="icon-tag"></i> {{post.categories | category_links}}</span></td> -->
+	{% endif %}
+{% endfor %}
+
+<!-- <ul>{% include category-list.html %}</ul> -->
