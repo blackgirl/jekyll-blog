@@ -2,10 +2,11 @@
 layout: page
 title: Слова
 ---
-<ul>
 {% assign pages = site.pages %}
+<ul>
+	<p>WORDS-1</p>
 {% for pg in pages %}
-<p>WORDS</p>
+	<p>WORDS</p>
 	{% if pg.categories contains 'words' %}
 	    <li><p><time datetime="{{pg.date|date:"%F"}}">{{pg.date|date:"%b %d, %Y"}}</time>
 	    <a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
