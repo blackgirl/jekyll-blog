@@ -6,8 +6,7 @@ title: Слова
 <ul>
 {% for pg in pages %}
 	{% if pg.url contains 'words' %}
-	    <li><p><time datetime="{{pg.date|date:"%F"}}">{{pg.date|date:"%b %d, %Y"}}</time>
-	    <a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
+	    <li><p><a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
 	{% endif %}
 {% endfor %}
 </ul>

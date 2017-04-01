@@ -3,16 +3,11 @@ layout: page
 title: Объекты
 ---
 <p class="page-intro">Смысл разный для всех. Форма одна.</p>
+{% assign pages = site.pages | sort: 'title' %}
 <ul>
-	<li><a href="bitovoe/zerkalo">Зеркало</a></li>
-	<li><a href="mistic/kvadr_krug">Квадратура Круга</a></li>
-	<li><a href="mistic/valknut">Валькнут</a></li>
-	<li><a href="mistic/abrakas">Абраксас</a></li>
-	<li><a href="folk/sirin">Птица Сирин</a></li>
-	<li><a href="folk/iriy">Ирийские птицы</a></li>
-	<li><a href="folk/alkonost">Алконост</a></li>
-	<li><a href="folk/ray">Вырий (Рай)</a></li>
-	<li><a href="folk/ad">Пекло (Ад)</a></li>
-	<li><a href="folk/vnl">Вера, Надежда, Любовь</a></li>
-	<li><a href="folk/navy">Навь</a></li>
+{% for pg in pages %}
+	{% if pg.url contains 'symbols' %}
+	    <li><p><a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
+	{% endif %}
+{% endfor %}
 </ul>

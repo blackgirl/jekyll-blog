@@ -1,17 +1,12 @@
 ---
 layout: page
 ---
-<h2>Мать-и-матиха</h2>
+{% assign pages = site.pages | sort: 'title' %}
 <ul>
-	<li>0</li>
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-	<li>4</li>
-	<li>5</li>
-	<li>6</li>
-	<li>7</li>
-	<li>8</li>
-	<li>9</li>
-	<li>10</li>
+{% for pg in pages %}
+	{% if pg.url contains 'num' %}
+	    <li><p><time datetime="{{pg.date|date:"%F"}}">{{pg.date|date:"%b %d, %Y"}}</time>
+	    <a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
+	{% endif %}
+{% endfor %}
 </ul>
