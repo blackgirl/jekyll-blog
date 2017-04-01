@@ -205,6 +205,7 @@ DEPENDENCIES
   jekyll-archives (~> 2.1)
   jekyll-paginate
   jekyll-tagging
+  jekyll-watch
 
 BUNDLED WITH
    1.13.6
