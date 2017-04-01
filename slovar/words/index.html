@@ -2,29 +2,13 @@
 layout: page
 title: Слова
 ---
-{% assign pages = site.pages %}
+{% assign pages = site.pages | sort: 'title' %}
 <ul>
-	<p>WORDS-1</p>
-{% for pg in pages %}
-	<!-- {% if pg.url contains 'words' %} -->
-	<!-- {% if p.categories contains page.category %} -->
-	    <li><p><time datetime="{{pg.date|date:"%F"}}">{{pg.date|date:"%b %d, %Y"}}</time>
-	    <a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
-	<!-- {% endif %} -->
-{% endfor %}
-</ul>
-<p>WORDS-2</p>
 {% for pg in pages %}
 	{% if pg.url contains 'words' %}
 	    <li><p><time datetime="{{pg.date|date:"%F"}}">{{pg.date|date:"%b %d, %Y"}}</time>
 	    <a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
 	{% endif %}
 {% endfor %}
-<p>WORDS-3</p>
-{% for pg in pages %}
-	{% if p.categories contains page.category %}
-	    <li><p><time datetime="{{pg.date|date:"%F"}}">{{pg.date|date:"%b %d, %Y"}}</time>
-	    <a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
-	{% endif %}
-{% endfor %}
+</ul>
 <!-- <ul>{% include category-list.html %}</ul> -->
