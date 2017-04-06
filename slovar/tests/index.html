@@ -1,0 +1,13 @@
+---
+layout: page
+title: Тесты
+---
+{% assign pages = site.pages | sort: 'title' %}
+<ul>
+{% for pg in pages %}
+	{% if pg.url contains 'words' %}
+	    <li><p><a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
+	{% endif %}
+{% endfor %}
+</ul>
+<!-- <ul>{% include category-list.html %}</ul> -->
