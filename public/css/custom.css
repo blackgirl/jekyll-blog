@@ -210,11 +210,11 @@ p img {
     margin-bottom: 4rem;
     font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: italic;
+    width: auto;
     margin-left: 4rem}
 .page-intro:first-letter {
     color: #197eb2;
     /*font-size: 1.75rem;*/
-    width: auto;
 }
 
 /* for ex. Category name */
