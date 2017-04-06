@@ -211,10 +211,11 @@ p img {
     font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-style: italic;
     width: auto;
-    margin-left: 4rem}
+    margin-left: 4rem;
+}
 .page-intro:first-letter {
     color: #197eb2;
-    /*font-size: 1.75rem;*/
+    font-size: 1.75rem;
 }
 
 /* for ex. Category name */
@@ -409,7 +410,7 @@ details[open] summary span {
 }
 
 /*new*/
-.wrap .section {
+.wrap .section:not(.page-intro) {
     padding: 0;
     width: 100%;
     background: none;
