@@ -5,7 +5,7 @@ title: Тесты
 {% assign pages = site.pages | sort: 'title' %}
 <ul>
 {% for pg in pages %}
-	{% if pg.url contains 'words' %}
+	{% if pg.url contains 'tests' %}
 	    <li><p><a href="{{site.url}}{{ pg.url }}">&nbsp;&nbsp;{{ pg.title }}</a></p></li>
 	{% endif %}
 {% endfor %}
