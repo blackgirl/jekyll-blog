@@ -517,10 +517,10 @@ article {
 article li {
     font-size: 18px;
     line-height: 18px;
-    padding-left: 0px;
+    padding-left: 25px;
     list-style: none;
     background: url("../icons/list-bullet.png") 14px 6px no-repeat;
-    /*padding-bottom: 15px;*/
+    padding-bottom: 10px;
 }
 .post-head {
     /*text-align: right;*/
