@@ -257,6 +257,12 @@ details[open] summary span {
 }
 
 /* Coliumns and grid */
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
 .col, .columns {
     width: 100%;
     float: left;
